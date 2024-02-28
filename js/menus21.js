@@ -39,28 +39,24 @@ function setUpperMenu(filename, relative_path) {
 	myMenu[7]['file'] = "pages/contact_us.html";
 
 
-	document.write("<table cellpadding=0 cellspacing=2 id='menu' dir='rtl' align='right'>");
-	document.write("<tr>");
-
+	document.write("<div id='menu'>");
 	for (i = 0; i < myMenu.length; i++) {
-		if (i > 0) { document.write("<td class='menusSymbol'>&nbsp;&#9834;&nbsp;</td>"); }
-		if (myMenu[i]['title'] == filename) {
-			document.write("<td  class='selectedMenuText' name='about'><b><a href='");
-			document.write(relative_path + myMenu[i]['file']);
-			document.write("'>");
-			document.write(myMenu[i]['page']);
-			document.write("</a></b></td>");
-		} else {
-			document.write("<td  class='menusText' name='about'><a href='");
-			document.write(relative_path + myMenu[i]['file']);
-			document.write("'>");
-			document.write(myMenu[i]['page']);
-			document.write("</a></td>");
-		}
-	}
+		if (i > 0) {
 
-	document.write("</tr>");
-	document.write("</table>");
+			document.write("<span class='menusSymbol'>&nbsp;&#9834;    &nbsp;</span> ")
+		}
+
+		var strClassName = "menusText";
+		if (myMenu[i]['title'] == filename) {
+			strClassName = "selectedMenuText";
+		}
+		document.write("<span  class='" + strClassName + "' name='about'><b><a href='");
+		document.write(relative_path + myMenu[i]['file']);
+		document.write("'>");
+		document.write(myMenu[i]['page']);
+		document.write("</a></span>");
+	}
+	document.write("</div>");
 }
 
 

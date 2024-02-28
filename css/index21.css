@@ -1,25 +1,10 @@
 div#container {
-width: 1200px;
-margin: 0px auto;
-background: #c397c4;
-padding: 0px;
+    width:100%;
+    max-width: 1200px;
+	margin: 0px auto;
+	background: #c397c4;
+	padding: 0px;
 }
-
-div#content {
-width: 1200px;
-height: 700px;
-padding-top: 150px;
-}
-
-div#header {
-width: 1200px;
-height: 110px;
-position: absolute;
-background-image:url('../img/logo.jpg');
-background-size: 1300px 108px;
-top: 0px;
-}
-
 
 .about{
 width: 65%; 
@@ -54,10 +39,10 @@ img.floatLeft {
 }
 
 .greetingText {
-     color: #000000;
-     font-family: Times New Roman;
-     font-size: 22px;
-     height: 15px;
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 22px;
+    height: 15px;
 	text-align: right;
 	line-height: 24px;
 }

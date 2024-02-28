@@ -1,63 +1,79 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+ 
+}
 body {
-background: #c397c4;
-font-family: verdana, arial, sans-serif;
-color: #c397c4;
-font-size: 12px;
-margin: 0px;
-overflow-y: scroll;
+    background: #c397c4;
+    font-family: verdana, arial, sans-serif;
+    color: #c397c4;
+    font-size: 12px;
+    margin: 0px;
+    overflow-y: scroll;
 }
 
 
 div#content {
-width: 1200px;
-height:630px;
-padding-top: 130px;
+    width:100%;
+    max-width: 1200px;
+    max-height:630px;
 }
 
 div#header {
-width: 1200;
-height: 110;
-background: white;
-position: absolute;
-background-image:url('logo.gif');
-top: 0px;
+    width:100%;
+    max-width: 1200px;
+    top: 0px;
+}
+
+div#header>img{
+    width:100%;
+    height: auto;
+    margin: auto;
 }
 
 div#footer {
-width: 1200px;
-height:35px;
-background: #996699;
-text-align:center;
-color:white;
-padding-top:5px;
-font-size: medium;
+    width:100%;
+    max-width: 1200px;
+    height:35px;
+    background: #996699;
+    text-align:center;
+    color:white;
+    padding-top:5px;
+    font-size: medium;
 }
 
 div#upper_menu {
-width: 1200px;
-padding-top: 110px;
-text-align:right;
+    width:100%;
+    max-width: 1200px;
+    text-align:right;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
 }
 
 
 div.breadcrumbs {
-width: 1200px;
-float:right;
-text-align:right;
-margin: 10px auto;
-padding-right:10px;
-font-size:12px;
-color: black;
+    width:100%;
+    max-width: 1200px;
+    float:right;
+    text-align:right;
+    margin: 10px auto;
+    padding-right:10px;
+    font-size:12px;
+    color: black;
 }
 
-.selectedMenuText {
+.selectedMenuText 
+a {
     color: #330066;
     font-family: David;
     font-size: 16px;
     height: 16px;
     text-align: right;
+    font-weight: bolder;
 }
-.menusText {
+.menusText a {
     color: #000000;
     font-family: David;
     font-size: 15px;
@@ -66,7 +82,7 @@ color: black;
 .menusSymbol {
     font-family: Times New Roman;
     font-size: 19px;
-#    color: #000000;
+    color: #000000;
 	padding: 5px;
 }
 
