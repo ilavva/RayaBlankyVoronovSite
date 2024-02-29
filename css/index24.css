@@ -1,95 +1,97 @@
-
-
 #content {
-	margin: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-between;
-	pad: 20px;
-	
-}
-
-
-.about{
-	width: 65%; 
-	min-width: 400px;
-	/* height: 410px; */
-	border: 3px solid #660033; 
-	/* float: left;
-	padding-right:20px;
-	padding-left:5px;
-	padding-top:20px;
-	padding-bottom:20px; */
-	vertical-align:top;
-}
-div#song{
+	/* margin: 20px; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
+	gap: 20px;
+	overflow:visible;
+}
+
+#about{
+	width: 65%; 
+	margin-top: 10px;
+	padding: 15px;
+	padding-bottom: 20px;
+	border: 3px solid #660033; 
+	display: block;
+   
+}
+#about img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	padding: 15px;
+	display: inline;
+}
+#about img {
+	width: 100%;
+	max-width: 370px;
+	padding: 15px;
+}
+.greetingText {
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 22px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: right;
+	line-height: 24px; 
+	display: block;
+}
+.divider {
+	height: 50px;
+}
+
+#song{
 	margin: 10px;
 	background-color: #FFCCFF;
-	/* gap: 5px; */
-	padding: 10px;
+	padding: 20px;
 }
-/* song row */
-div#song span{
+
+#song span{
 	display: block;
 	color: #660033;
 	font-family: david;
 	font-size: 24px;
 	font-style: italic;
 	font-weight: lighter;
-	/* padding-right:10px; */
-	text-align: justify;
+	align-self: start;
 	width: auto;
-	/* min-width: 25%;  */
 	line-height:45px;
-	/* float: right; */
-	flex-wrap: nowrap;
+	text-wrap: nowrap;
+	align-items: baseline;
 }
-/* last closing "  */
-div#song>:last-child {
-	display: flex;
-	align-items: flex-end;
-}
-
-@media screen and (max-width: 500px) {
-	* {
-		direction: rtl;
-	}
+@media screen and (max-width: 1000px){
 
 	#content {
-		margin: auto;
-		/* display: block; */
-		align-items: center;
-		
+		margin: auto;		
 	}
-	div#song{
-		font-size: 18;
-		line-height:auto;
-		width: 300px;
+
+	#about {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 500px) {
+	#content {
+		margin: auto;		
+	}
+
+	#song {
 		color: #461baa;
-		
-		padding-right:10;
-		margin: 10px;
-		
+		font-size: 16px;
+		line-height:18px;		
 	}
+	#about {
+		width: 100%;
+		margin: 20px;
+	}
+	.divider {
+		height: 50px;
+	}
+	
 }
 
-.about img.floatLeft { 
-	float: left; 
-	margin: 4px; 
-	width: 370px;
-}
-
-.greetingText {
-    color: #000000;
-    font-family: Times New Roman;
-    font-size: 22px;
-    height: 15px;
-	text-align: right;
-	line-height: 24px;
-}
 
 
 

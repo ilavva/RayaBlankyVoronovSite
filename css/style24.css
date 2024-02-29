@@ -2,9 +2,9 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-   
     
 }
+
 body {
     background: #c397c4;
     font-family: verdana, arial, sans-serif;
@@ -30,9 +30,10 @@ div#content {
     width:100%; 
     max-width: 1200px;
     max-height:630px; 
-    background-color: beige;
+    margin-top: 20px;
 
 }
+
 /* ----------- start header */
 div#header {
     width:100%;
@@ -47,38 +48,40 @@ div#header>img{
 }
 /* start menu style */
 div#upper_menu {
-    width:100%;
+    width:97%;
     max-width: 1200px;
     text-align:right;
     display: flex;
     justify-content: space-around;
-    margin-right: 20px;
+    margin: auto;
+    
 }
 
 .selectedMenuText 
 a {
     color: #330066;
     font-family: David;
-    font-size: 16px;
+    font-size: 18px;
     height: 16px;
     text-align: right;
-    font-weight: bolder;
+    font-weight: bold;
+    text-decoration: none;
+    text-wrap:nowrap;
 }
-.menusText a {
-    color: #000000;
+.menuText a {
+    color: rgb(85, 26, 139);
     font-family: David;
-    font-size: 15px;
+    font-size: 16px;
     text-align: right;
+    text-wrap:nowrap;
 }
-.menusSymbol {
-    font-family: Times New Roman;
+.menuSymbol {
+    font-family:'Times New Roman', Times, serif;
     font-size: 19px;
-    color: #000000;
-	padding: 5px;
+    color: rgb(85, 26, 139);
+	padding: 0px 15px;
 }
-/* -----------  end menu style */
-/* ----------- end header */
-/* ------------ footer style */
+
 
 div#footer {
     width:100%; 
@@ -88,9 +91,8 @@ div#footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    /* height:35px; */
     background: #996699;   
-    padding:5px;
+    padding:15px 10px;
     margin: auto;
     position: fixed; 
 	bottom:0;
@@ -113,7 +115,7 @@ div#footer * {
 }
 
 .footerData>span {
-    padding-inline: 5px;
+    padding-inline: 10px;
     text-wrap:nowrap;
 }
 
@@ -125,15 +127,16 @@ div#footer * {
         justify-content: center;
     
     }
-
+    div#footer * {
+        font-size:large;
+    }
+    
     div#footer div{
-        
         margin: auto;
     }
     
 }
 
-/* end footer style */
 
 div.breadcrumbs {
     width:100%;

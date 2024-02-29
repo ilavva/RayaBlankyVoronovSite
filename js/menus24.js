@@ -43,10 +43,10 @@ function setUpperMenu(filename, relative_path) {
 	for (i = 0; i < myMenu.length; i++) {
 		if (i > 0) {
 
-			document.write("<span class='menusSymbol'>&nbsp;&#9834;    &nbsp;</span> ")
+			document.write("<span class='menuSymbol'>&#9834;</span> ")
 		}
 
-		var strClassName = "menusText";
+		var strClassName = "menuText";
 		if (myMenu[i]['title'] == filename) {
 			strClassName = "selectedMenuText";
 		}
