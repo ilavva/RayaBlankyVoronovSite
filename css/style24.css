@@ -1,0 +1,149 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+    
+}
+body {
+    background: #c397c4;
+    font-family: verdana, arial, sans-serif;
+    color: #c397c4;
+    font-size: 12px;
+    margin: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    
+}
+
+div#container {
+    max-width: 1200px;
+    width:100%;
+    margin: auto;
+    background: #c397c4;
+    /* padding: 0px; */
+    align-self: center;
+}
+
+div#content {
+    width:100%; 
+    max-width: 1200px;
+    max-height:630px; 
+    background-color: beige;
+
+}
+/* ----------- start header */
+div#header {
+    width:100%;
+    max-width: 1200px;
+    top: 0px;
+}
+
+div#header>img{
+    width:100%;
+    height: auto;
+    margin: auto;
+}
+/* start menu style */
+div#upper_menu {
+    width:100%;
+    max-width: 1200px;
+    text-align:right;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.selectedMenuText 
+a {
+    color: #330066;
+    font-family: David;
+    font-size: 16px;
+    height: 16px;
+    text-align: right;
+    font-weight: bolder;
+}
+.menusText a {
+    color: #000000;
+    font-family: David;
+    font-size: 15px;
+    text-align: right;
+}
+.menusSymbol {
+    font-family: Times New Roman;
+    font-size: 19px;
+    color: #000000;
+	padding: 5px;
+}
+/* -----------  end menu style */
+/* ----------- end header */
+/* ------------ footer style */
+
+div#footer {
+    width:100%; 
+    max-width: 1200px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    /* height:35px; */
+    background: #996699;   
+    padding:5px;
+    margin: auto;
+    position: fixed; 
+	bottom:0;
+  
+}
+
+div#footer * {
+    color:white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: lighter; 
+}
+
+
+#footer > div span a img , 
+#footer > div span img {
+    vertical-align: text-bottom;
+    width: 16px;
+    height: 16px; 
+}
+
+.footerData>span {
+    padding-inline: 5px;
+    text-wrap:nowrap;
+}
+
+@media screen and (max-width: 880px) {
+    div#footer div.footerData {
+        width:100%;         
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+
+    div#footer div{
+        
+        margin: auto;
+    }
+    
+}
+
+/* end footer style */
+
+div.breadcrumbs {
+    width:100%;
+    max-width: 1200px;
+    float:right;
+    text-align:right;
+    margin: 10px auto;
+    padding-right:10px;
+    font-size:12px;
+    color: black;
+}
+
+

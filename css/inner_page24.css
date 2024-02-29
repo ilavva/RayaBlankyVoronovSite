@@ -1,11 +1,5 @@
 /*  ************General****** */
-div#container {
-max-width: 1200px;
-width:100%;
-margin: 0px auto;
-background: #c397c4;
-padding: 0px;
-}
+
 
 div#content {
 /* width: 1200px; */
@@ -99,81 +93,81 @@ font-size: 21px;
 /*  ************Music Theraphy****** */
 
 div#content_music_therapy {
-width: 1200px;
-height: 2300px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 2300px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************Tipul Diadi****** */
 
 div#content_tipul_diadi {
-width: 1200px;
-height: 1750px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1750px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ cbt****** */
 
 div#content_cbt {
-width: 1200px;
-height: 1600px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1600px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 
 /*  ************ biofeedback****** */
 
 div#content_biofeedback {
-width: 1200px;
-height: 1750px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1750px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ social skills****** */
 
 div#content_social_skills {
-width: 1200px;
-height: 2450px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 2450px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ parents guidance****** */
 
 div#content_parents {
-width: 1200px;
-height: 1700px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1700px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ professional training****** */
 
 div#prof_training {
-width: 1200px;
-height: 1400px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1400px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ articles ****** */
 
 div#articles {
-width: 1200px;
-height: 1100px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1100px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 /*  ************ contact us****** */
 
 div#contact {
-width: 1200px;
-height: 800px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 800px;
+	padding-top: 130px;
+	font-size: 21px;
 }
