@@ -1,10 +1,10 @@
 #content {
-	/* margin: 20px; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
 	gap: 20px;
 	overflow:visible;
+	height :100%;
 }
 
 #about{
@@ -14,6 +14,7 @@
 	padding-bottom: 20px;
 	border: 3px solid #660033; 
 	display: block;
+	height :100%;
    
 }
 #about img.floatLeft { 
@@ -58,38 +59,34 @@
 	font-weight: lighter;
 	align-self: start;
 	width: auto;
-	line-height:45px;
+	line-height: 200%;	
 	text-wrap: nowrap;
 	align-items: baseline;
 }
+
 @media screen and (max-width: 1000px){
 
 	#content {
-		margin: auto;		
+		margin: auto;
+		height :100%;		
 	}
 
 	#about {
 		width: 90%;
 	}
 }
-@media screen and (max-width: 500px) {
-	#content {
-		margin: auto;		
-	}
 
-	#song {
-		color: #461baa;
-		font-size: 16px;
-		line-height:18px;		
+@media screen and (max-width: 500px) {
+
+	#song span{
+		font-size: 18px;
+		line-height: 200%;	
 	}
 	#about {
 		width: 100%;
 		margin: 20px;
 	}
-	.divider {
-		height: 50px;
-	}
-	
+
 }
 
 

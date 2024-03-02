@@ -14,24 +14,26 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     direction: rtl;
+    height    : 100%;
     
 }
 
-div#container {
+#container {
     max-width: 1200px;
     width:100%;
     margin: auto;
     background: #c397c4;
-    /* padding: 0px; */
     align-self: center;
+    height :100%;
+    /* make content visible with the 
+    absolute position of footer*/
+    margin-bottom: 200px;
 }
 
-div#content {
+#content {
     width:100%; 
     max-width: 1200px;
-    max-height:630px; 
     margin-top: 20px;
-
 }
 
 /* ----------- start header */
@@ -125,6 +127,7 @@ div#footer * {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        line-height: 200%;
     
     }
     div#footer * {
