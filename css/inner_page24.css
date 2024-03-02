@@ -1,36 +1,58 @@
+
 /*  ************General****** */
-
-
-div#content {
-/* width: 1200px; */
-padding-top: 130px;
-position: bottom;
-}
 
 img.basic { 
 	margin: 1px; 
-	width: 450px;
+	max-width: 450px;
+	width:80%;
 }
 
-
-/*--------Mathilim----------*/
-div#content_start {
-width: 1200px;
-height: 1000px;
-padding-top: 130px;
-font-size: 21px;
+img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	width: 100%;
+	display: inline;
+	margin-right: 10px;
 }
 
+/*--------Mathilim--- start.html -------*/
+#content_start {
+	max-width: 1200px;
+	min-height: 1500px; 
+	width:100%;
+	padding-top: 20px;
+	padding: 10px;
+	font-size: 21px;
+	font-weight: normal;
+	height :100%;
+	    /* make content visible with the 
+    absolute position of footer*/
+    margin-bottom: 200px;
+}
+@media screen and (max-width: 500px){
 
+	#content_start {
+		min-height: 1600px; 
+		height :100%;		
+	}
+}
+
+article {
+	direction: rtl;
+	text-align: right;
+	line-height: 36px;
+}
 /*  ************about****** */
 
 div#content_about {
-width: 1200px;
-height: 1500px;
-padding-top: 130px;
-font-size: 21px;
+	max-width: 1200px;
+	height: 4000px;
+	padding-top: 130px;
+	font-size: 21px;
 }
-
+#content_about * {
+	border: yellow 1px dashed;
+}
 img.about1 { 
 	margin: 1px; 
 	width: 500px;
@@ -41,15 +63,21 @@ img.about2 {
 	float: left;
 	text-align: right;
 }
+
 .tableData{
 	float: right;
 	color: #000000;
-     font-family: David;
+    font-family: David;
 	font-size: 21px;
-     height: 16px;
-     text-align: right;
+    height: 16px;
+    text-align: right;
 	line-height: 32px;
 	vertical-align: top;
+}
+.tableData h3 {
+	font-size: 21px;
+	font-weight: normal;
+	text-decoration: underline;
 }
 /*  ************Tipulim Partaniim****** */
 div#content_partani {
