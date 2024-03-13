@@ -1,11 +1,19 @@
 
 /*  ************General****** */
 
-img.basic { 
-	margin: 1px; 
-	max-width: 450px;
-	width:80%;
+div.breadcrumbs {
+    width:100%;
+    max-width: 1200px;
+    float:right;
+    text-align:right;
+    margin: 10px auto;
+    padding-right:10px;
+    font-size:12px;
+    font-weight: normal;
+    color: black;
+    direction: rtl;
 }
+
 
 img.floatLeft { 
 	float: left; 
@@ -15,38 +23,63 @@ img.floatLeft {
 	margin-right: 10px;
 }
 
-/*--------Mathilim--- start.html -------*/
-#content_start {
-	max-width: 1200px;
-	min-height: 1500px; 
-	width:100%;
-	padding-top: 20px;
-	padding: 10px;
-	font-size: 21px;
+article.contentData{
+
+	margin-top: 10px;
+	padding: 15px;
+	padding-bottom: 20px;
+	
+	display: block;
+	/* height :100%; */
+	/* height: auto; */
+	min-width: 370px;
+
 	font-weight: normal;
-	height :100%;
-	    /* make content visible with the 
-    absolute position of footer*/
-    margin-bottom: 200px;
-}
-@media screen and (max-width: 500px){
+	/* text-align: right; */
+	/* line-height: 24px;  */
 
-	#content_start {
-		min-height: 1600px; 
-		height :100%;		
-	}
+	float: left;
+    color: #000000;
+    font-family: David;
+    font-size: 21px;
+    height: 16px;
+    text-align: right;
+    line-height: 32px;
 }
 
-article {
-	direction: rtl;
-	text-align: right;
-	line-height: 36px;
+article.contentData p {
+	min-width: 370px;
 }
+article.contentData > h2 > img.koteret220px {
+	width: 220px;
+	display: block;
+	padding: 0px;
+	margin-bottom: 30px;
+}
+article.contentData img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	padding: 5px;
+	display: inline;
+}
+article.contentData img.basic { 
+	margin: 1px; 
+	max-width: 450px;
+	width:80%;
+}
+article.contentData img {
+	width: 100%;
+	max-width: 370px;
+	padding: 15px;
+}
+
+
 /*  ************about****** */
 
 div#content_about {
 	max-width: 1200px;
-	height: 4000px;
 	padding-top: 130px;
 	font-size: 21px;
 }
@@ -64,21 +97,7 @@ img.about2 {
 	text-align: right;
 }
 
-.tableData{
-	float: right;
-	color: #000000;
-    font-family: David;
-	font-size: 21px;
-    height: 16px;
-    text-align: right;
-	line-height: 32px;
-	vertical-align: top;
-}
-.tableData h3 {
-	font-size: 21px;
-	font-weight: normal;
-	text-decoration: underline;
-}
+
 /*  ************Tipulim Partaniim****** */
 div#content_partani {
 width: 1200px;

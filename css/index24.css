@@ -1,35 +1,21 @@
-#content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;
-	gap: 20px;
-	overflow:visible;
-	height :100%;
-}
-
-#about{
+article.contentData{
 	width: 65%; 
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
 	border: 3px solid #660033; 
-	display: block;
 	height :100%;
    
 }
-#about img.floatLeft { 
+
+article.contentData img.floatLeft { 
 	float: left; 
 	margin: auto; 
 	max-width: 370px;
 	width: 100%;
-	padding: 15px;
 	display: inline;
 }
-#about img {
-	width: 100%;
-	max-width: 370px;
-	padding: 15px;
-}
+
 .greetingText {
     color: #000000;
     font-family: Times New Roman;
@@ -38,19 +24,15 @@
 	font-weight: normal;
 	text-align: right;
 	line-height: 24px; 
-	display: block;
-}
-.divider {
-	height: 50px;
 }
 
-#song{
+.song{
 	margin: 10px;
 	background-color: #FFCCFF;
 	padding: 20px;
 }
 
-#song span{
+.song span{
 	display: block;
 	color: #660033;
 	font-family: david;
@@ -66,25 +48,22 @@
 
 @media screen and (max-width: 1000px){
 
-	.content {
-		margin: auto;
-		height :100%;		
-	}
-
-	#about {
+	article.contentData {	
 		width: 90%;
 	}
 }
 
 @media screen and (max-width: 500px) {
 
-	#song span{
+	.song span{
 		font-size: 18px;
 		line-height: 200%;	
 	}
-	#about {
+
+	article.contentData{
+		
 		width: 100%;
-		margin: 20px;
+		margin: 10px;
 	}
 
 }
