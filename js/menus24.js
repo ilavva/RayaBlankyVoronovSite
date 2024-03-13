@@ -44,24 +44,19 @@ function setUpperMenu() {
 	myMenu[7]['file'] = "pages/contact_us.html";
 
 
-	strMenu += ("<div id='menu'>");
+	strMenu += "<div id='menu'>";
 	for (i = 0; i < myMenu.length; i++) {
-		if (i > 0) {
-
-			strMenu += ("<span class='menuSymbol'>&#9834;</span> ")
-		}
-
 		var strClassName = "menuText";
 		if (myMenu[i]['title'] == filename) {
 			strClassName = "selectedMenuText";
 		}
-		strMenu += ("<span  class='" + strClassName + "' name='about'><b><a href='");
-		strMenu += (relative_path + myMenu[i]['file']);
-		strMenu += ("'>");
-		strMenu += (myMenu[i]['page']);
-		strMenu += ("</a></span>");
+		if (i > 0) {
+
+			strMenu += "<span class='menuSymbol'>&#9834;</span>"
+		}
+		strMenu += `<span  class='${strClassName}' name='about'><a href='${relative_path}${myMenu[i]['file']}'>${myMenu[i]['page']}</a></span>`;
 	}
-	strMenu += ("</div>");
+	strMenu += "</div>";
 	document.getElementById("upper_menu").innerHTML = strMenu;
 }
 
