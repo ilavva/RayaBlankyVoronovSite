@@ -1,7 +1,12 @@
 
-function setUpperMenu(filename, relative_path) {
+function setUpperMenu() {
 	var myMenu = new Array(8);
-	relative_path = typeof relative_path !== 'undefined' ? relative_path : "";
+	var strMenu = "";
+	var relative_path = "../";
+	var filename = document.getElementById("upper_menu").getAttribute("page");
+	if (filename === "index") {
+		relative_path = "./";
+	}
 
 	for (i = 0; i < myMenu.length; i++) {
 		myMenu[i] = new Array(3);
@@ -39,27 +44,34 @@ function setUpperMenu(filename, relative_path) {
 	myMenu[7]['file'] = "pages/contact_us.html";
 
 
-	document.write("<div id='menu'>");
+	strMenu += ("<div id='menu'>");
 	for (i = 0; i < myMenu.length; i++) {
 		if (i > 0) {
 
-			document.write("<span class='menuSymbol'>&#9834;</span> ")
+			strMenu += ("<span class='menuSymbol'>&#9834;</span> ")
 		}
 
 		var strClassName = "menuText";
 		if (myMenu[i]['title'] == filename) {
 			strClassName = "selectedMenuText";
 		}
-		document.write("<span  class='" + strClassName + "' name='about'><b><a href='");
-		document.write(relative_path + myMenu[i]['file']);
-		document.write("'>");
-		document.write(myMenu[i]['page']);
-		document.write("</a></span>");
+		strMenu += ("<span  class='" + strClassName + "' name='about'><b><a href='");
+		strMenu += (relative_path + myMenu[i]['file']);
+		strMenu += ("'>");
+		strMenu += (myMenu[i]['page']);
+		strMenu += ("</a></span>");
 	}
-	document.write("</div>");
+	strMenu += ("</div>");
+	document.getElementById("upper_menu").innerHTML = strMenu;
 }
 
-function setFooterData(suffix) {
+function setFooterData() {
+	var suffix = "..";
+	var filename = document.getElementById("upper_menu").getAttribute("page");
+	if (filename === "index") {
+		suffix = ".";
+	}
+
 	var str = '' +
 		'<div class="footerData"><span> ד"ר רעיה בלנקי-וורונוב</span></div>' +
 		'<div class="footerData">' +
@@ -72,6 +84,8 @@ function setFooterData(suffix) {
 		'<div class="footerData">' +
 		'	<span><a href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20" target="_blank"><img src="' + suffix + '/img/whatsapp.png" > הודעה לווטסאפ</a></span>' +
 		'</div> ';
-	document.write(str);
-}
+	document.querySelector("footer").innerHTML = str;
 
+}
+setFooterData();
+setUpperMenu();
