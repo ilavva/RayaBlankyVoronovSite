@@ -39,10 +39,13 @@ article.contentData{
     line-height: 32px;
 }
 
+
 article.contentData p {
 	min-width: 370px;
 
 }
+
+
 article.contentData > h2 > img.koteret220px {
 	width: 220px;
 	display: block;
@@ -57,6 +60,16 @@ article.contentData img.floatLeft {
 	padding: 5px;
 	display: inline;
 }
+
+article.contentData img.floatRight { 
+	float: right; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	padding: 5px;
+	display: inline;
+}
+
 article.contentData img.basic { 
 	margin: 1px; 
 	max-width: 450px;
@@ -68,6 +81,44 @@ article.contentData img {
 	padding: 15px;
 }
 
+/************ start *******/
+article.contentData {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-areas: 
+	"full0 full0 full0" 
+	"floatRight1 floatLeft1 floatLeft1 " 
+	"full1 full1 full1" 
+	" floatRight2 floatRight2 floatLeft2" 
+	"full1 full1 full1" ;
+}
+
+section.full0 {
+	grid-area: full0;
+}
+section.floatLeft1 {
+	grid-area: floatLeft1;
+}
+section.floatRight1{
+	grid-area: floatRight1;
+}
+section.full1 {
+	grid-area: full1;
+}
+section.floatLeft2{
+	grid-area: floatLeft2;
+}
+section.floatRight2 {
+	grid-area: floatRight2;
+}
+section.full2{
+	grid-area: full2;
+}
+@media screen and (max-width:500px) {
+	article.contentData {
+		grid-template-areas: "full0" "floatLeft1" "floatRight1" "full1" "floatLeft2" "floatRight2" "full1" ;
+	}
+}
 
 /*  ************about****** */
 

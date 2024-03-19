@@ -86,7 +86,7 @@ a {
 }
 
 /* content */
-section.content {
+main.content {
     flex: 1;
     border: 1px yellow dashed;
     width:100%; 
