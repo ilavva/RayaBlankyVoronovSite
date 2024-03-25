@@ -1,0 +1,76 @@
+article.contentData{
+	width: 65%; 
+	margin-top: 10px;
+	padding: 15px;
+	padding-bottom: 20px;
+	border: 3px solid #660033; 
+	height :100%;
+   
+}
+
+article.contentData img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	display: inline;
+}
+
+.greetingText {
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 22px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: right;
+	line-height: 24px; 
+}
+
+.song{
+	margin: 10px;
+	background-color: #FFCCFF;
+	padding: 20px;
+}
+
+.song span{
+	display: block;
+	color: #660033;
+	font-family: david;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: lighter;
+	align-self: start;
+	width: auto;
+	line-height: 200%;	
+	text-wrap: nowrap;
+	align-items: baseline;
+}
+
+@media screen and (max-width: 1000px){
+
+	article.contentData {	
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.song span{
+		font-size: 18px;
+		line-height: 200%;	
+	}
+
+	article.contentData{
+		
+		width: 100%;
+		margin: 10px;
+	}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+
+/*  ************General****** */
+
+div.breadcrumbs {
+    width:100%;
+    max-width: 1200px;
+    float:right;
+    text-align:right;
+    margin: 10px auto;
+    padding-right:10px;
+    font-size:12px;
+    font-weight: normal;
+    color: black;
+    direction: rtl;
+}
+
+
+img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	width: 100%;
+	display: inline;
+	margin-right: 10px;
+}
+
+article.contentData{
+	margin-top: 10px;
+	padding: 15px;
+	padding-bottom: 20px;
+
+	font-weight: normal;
+
+	float: left;
+    color: #000000;
+    font-family: David;
+    font-size: 21px;
+   
+    text-align: right;
+    line-height: 32px;
+}
+
+
+article.contentData p {
+	min-width: 370px;
+
+}
+
+
+article.contentData > h2 > img.koteret220px {
+	width: 220px;
+	display: block;
+	padding: 0px;
+	margin-bottom: 30px;
+} 
+article.contentData img.floatLeft { 
+	float: left; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	padding: 5px;
+	display: inline;
+}
+
+article.contentData img.floatRight { 
+	float: right; 
+	margin: auto; 
+	max-width: 370px;
+	width: 100%;
+	padding: 5px;
+	display: inline;
+}
+
+article.contentData img.basic { 
+	margin: 1px; 
+	max-width: 450px;
+	width:80%;
+}
+article.contentData img {
+	width: 100%;
+	max-width: 370px;
+	padding: 15px;
+}
+
+/************ start *******/
+article.contentData {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-areas: 
+	"full0 full0 full0" 
+	"floatRight1 floatLeft1 floatLeft1 " 
+	"full1 full1 full1" 
+	" floatRight2 floatRight2 floatLeft2" 
+	"full1 full1 full1" ;
+}
+
+section.full0 {
+	grid-area: full0;
+}
+section.floatLeft1 {
+	grid-area: floatLeft1;
+}
+section.floatRight1{
+	grid-area: floatRight1;
+}
+section.full1 {
+	grid-area: full1;
+}
+section.floatLeft2{
+	grid-area: floatLeft2;
+}
+section.floatRight2 {
+	grid-area: floatRight2;
+}
+section.full2{
+	grid-area: full2;
+}
+@media screen and (max-width:500px) {
+	article.contentData {
+		grid-template-areas: "full0" "floatLeft1" "floatRight1" "full1" "floatLeft2" "floatRight2" "full1" ;
+	}
+}
+
+/*  ************about****** */
+
+div#content_about {
+	max-width: 1200px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+#content_about * {
+	border: yellow 1px dashed;
+}
+img.about1 { 
+	margin: 1px; 
+	width: 500px;
+}
+img.about2 { 
+	margin: 1px; 
+	width: 400px;
+	float: left;
+	text-align: right;
+}
+
+
+/*  ************Tipulim Partaniim****** */
+div#content_partani {
+width: 1200px;
+height: 700px;
+padding-top: 130px;
+font-size: 21px;
+}
+/*  ************Tipul Rigshi****** */
+
+div#content_tipul_rigshi {
+width: 1200px;
+height: 1900px;
+padding-top: 130px;
+font-size: 21px;
+}
+/*  ************Tipul Rigshi Mevugarim****** */
+
+div#content_tipul_rigshi_mevugarim {
+width: 1200px;
+height: 2000px;
+padding-top: 130px;
+font-size: 21px;
+}
+
+img.tipulRigshi2 { 
+	margin: 1px; 
+	width: 500px;
+}
+
+/*  ************Music Theraphy****** */
+
+div#content_kvutzat_gil_itbagrut {
+width: 1200px;
+height: 1800px;
+padding-top: 130px;
+font-size: 21px;
+}
+
+
+/*  ************Music Theraphy****** */
+
+div#content_music_therapy {
+	width: 1200px;
+	height: 2300px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************Tipul Diadi****** */
+
+div#content_tipul_diadi {
+	width: 1200px;
+	height: 1750px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ cbt****** */
+
+div#content_cbt {
+	width: 1200px;
+	height: 1600px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+
+/*  ************ biofeedback****** */
+
+div#content_biofeedback {
+	width: 1200px;
+	height: 1750px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ social skills****** */
+
+div#content_social_skills {
+	width: 1200px;
+	height: 2450px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ parents guidance****** */
+
+div#content_parents {
+	width: 1200px;
+	height: 1700px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ professional training****** */
+
+div#prof_training {
+	width: 1200px;
+	height: 1400px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ articles ****** */
+
+div#articles {
+	width: 1200px;
+	height: 1100px;
+	padding-top: 130px;
+	font-size: 21px;
+}
+
+/*  ************ contact us****** */
+
+div#contact {
+	width: 1200px;
+	height: 800px;
+	padding-top: 130px;
+	font-size: 21px;
+}
