@@ -1,13 +1,22 @@
 article.contentData{
-	width: 65%; 
+   display: block;
+}
+div.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	gap: 15px;
+
+}
+.shalom {
+	border: 3px solid #660033; 
+	max-width: 70%; 
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
-	border: 3px solid #660033; 
-	height :100%;
-   
+	
+	height :fit-content;
 }
-
 article.contentData img.floatLeft { 
 	float: left; 
 	margin: auto; 
@@ -27,9 +36,11 @@ article.contentData img.floatLeft {
 }
 
 .song{
-	margin: 10px;
+	/* margin: 10px; */
 	background-color: #FFCCFF;
 	padding: 20px;
+	width: fit-content;
+	height: fit-content;
 }
 
 .song span{
@@ -48,9 +59,29 @@ article.contentData img.floatLeft {
 
 @media screen and (max-width: 1000px){
 
-	article.contentData {	
+	.shalom {	
 		width: 90%;
 	}
+}
+
+@media screen and (max-width: 740px){
+	div.gallery {
+		
+		flex-wrap: wrap;
+		justify-content:center;
+		
+	
+	}
+
+	.shalom{
+		min-width: auto;
+		margin: 5px;
+	} 
+	.shalom h2 img {
+		width: 100%;
+	}
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -60,11 +91,14 @@ article.contentData img.floatLeft {
 		line-height: 200%;	
 	}
 
-	article.contentData{
-		
+	 .shalom{
+		min-width: auto;
+		margin: 5px;
+	} 
+	.shalom h2 img {
 		width: 100%;
-		margin: 10px;
 	}
+
 
 }
 
