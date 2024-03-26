@@ -1,42 +1,46 @@
-
 /*  ************General****** */
 
 div.breadcrumbs {
-    width:100%;
-    max-width: 1200px;
-    float:right;
-    text-align:right;
-    margin: 10px auto;
-    padding-right:10px;
-    font-size:12px;
-    font-weight: normal;
-    color: black;
-    direction: rtl;
+	width: 100%;
+	max-width: 1200px;
+	text-wrap: nowrap;
+	height: 25px;
+	float: right;
+	text-align: right;
+	margin: 10px auto;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+	direction: rtl;
+
 }
 
 
-img.floatLeft { 
-	float: left; 
-	margin: auto; 
+img.floatLeft {
+	float: left;
+	margin: auto;
 	width: 100%;
 	display: inline;
 	margin-right: 10px;
 }
 
-article.contentData{
+
+
+article.contentData {
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
 
 	font-weight: normal;
 
-	float: left;
-    color: #000000;
-    font-family: David;
-    font-size: 21px;
-   
-    text-align: right;
-    line-height: 32px;
+
+	color: #000000;
+	font-family: David;
+	font-size: 21px;
+
+	text-align: right;
+	line-height: 32px;
 }
 
 
@@ -46,35 +50,46 @@ article.contentData p {
 }
 
 
-article.contentData > h2 > img.koteret220px {
-	width: 220px;
+article.contentData>h2>img.koteret220px {
+	max-width: 220px;
 	display: block;
 	padding: 0px;
 	margin-bottom: 30px;
-} 
-article.contentData img.floatLeft { 
-	float: left; 
-	margin: auto; 
+}
+article.contentData>h2>img.koteret445px {
+	max-width: 445px;
+	padding: 0px;
+}
+
+article.contentData .placeholder {
+	min-width: 220px;
+	display: block;
+}
+
+article.contentData img.floatLeft {
+	float: left;
+	margin: auto;
 	max-width: 370px;
 	width: 100%;
 	padding: 5px;
 	display: inline;
 }
 
-article.contentData img.floatRight { 
-	float: right; 
-	margin: auto; 
+article.contentData img.floatRight {
+	float: right;
+	margin: auto;
 	max-width: 370px;
 	width: 100%;
 	padding: 5px;
 	display: inline;
 }
 
-article.contentData img.basic { 
-	margin: 1px; 
+article.contentData img.basic {
+	margin: 1px;
 	max-width: 450px;
-	width:80%;
+	width: 80%;
 }
+
 article.contentData img {
 	width: 100%;
 	max-width: 370px;
@@ -82,43 +97,6 @@ article.contentData img {
 }
 
 /************ start *******/
-article.contentData {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-areas: 
-	"full0 full0 full0" 
-	"floatRight1 floatLeft1 floatLeft1 " 
-	"full1 full1 full1" 
-	" floatRight2 floatRight2 floatLeft2" 
-	"full1 full1 full1" ;
-}
-
-section.full0 {
-	grid-area: full0;
-}
-section.floatLeft1 {
-	grid-area: floatLeft1;
-}
-section.floatRight1{
-	grid-area: floatRight1;
-}
-section.full1 {
-	grid-area: full1;
-}
-section.floatLeft2{
-	grid-area: floatLeft2;
-}
-section.floatRight2 {
-	grid-area: floatRight2;
-}
-section.full2{
-	grid-area: full2;
-}
-@media screen and (max-width:500px) {
-	article.contentData {
-		grid-template-areas: "full0" "floatLeft1" "floatRight1" "full1" "floatLeft2" "floatRight2" "full1" ;
-	}
-}
 
 /*  ************about****** */
 
@@ -127,57 +105,78 @@ div#content_about {
 	padding-top: 130px;
 	font-size: 21px;
 }
+
 #content_about * {
 	border: yellow 1px dashed;
 }
-img.about1 { 
-	margin: 1px; 
-	width: 500px;
+
+div.about1 {
+	display: flex;
+	
 }
-img.about2 { 
-	margin: 1px; 
+div.about1 div {
+	min-width: 60%;
+}
+div.about1 div ul {
+	margin-right: 20px;
+}
+
+img.about1 {
+	margin: 1px;
+	width: 500px;
+	height: fit-content;
+}
+
+img.about2 {
+	margin: 1px;
 	width: 400px;
 	float: left;
 	text-align: right;
 }
 
+@media screen and (max-width: 880px){
+	div.about1 {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-/*  ************Tipulim Partaniim****** */
-div#content_partani {
-width: 1200px;
-height: 700px;
-padding-top: 130px;
-font-size: 21px;
-}
-/*  ************Tipul Rigshi****** */
+	img.about1 {
+		width :95%;		
+	}
 
-div#content_tipul_rigshi {
-width: 1200px;
-height: 1900px;
-padding-top: 130px;
-font-size: 21px;
+	div.about1 div {
+		display: block;
+		width: 95%;
+	}
+	div.about1 div ul {
+		margin-right: 5px;
+	}
+	
 }
+
+
+
 /*  ************Tipul Rigshi Mevugarim****** */
 
 div#content_tipul_rigshi_mevugarim {
-width: 1200px;
-height: 2000px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 2000px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
-img.tipulRigshi2 { 
-	margin: 1px; 
+img.tipulRigshi2 {
+	margin: 1px;
 	width: 500px;
 }
 
 /*  ************Music Theraphy****** */
 
 div#content_kvutzat_gil_itbagrut {
-width: 1200px;
-height: 1800px;
-padding-top: 130px;
-font-size: 21px;
+	width: 1200px;
+	height: 1800px;
+	padding-top: 130px;
+	font-size: 21px;
 }
 
 
@@ -247,18 +246,119 @@ div#prof_training {
 
 /*  ************ articles ****** */
 
-div#articles {
-	width: 1200px;
-	height: 1100px;
-	padding-top: 130px;
-	font-size: 21px;
+.coursive {
+	font-style: italic;
 }
+.english div,
+.english, 
+ul.english,
+ul.english li{
+	display: block;
+	direction: ltr;
+	text-align: start;
+}
+.hebrew div,
+.hebrew{
+	display: block;
+	direction: rtl;
+	text-align: start;
+}
+
+.english div h3 {
+	display: inline;
+	direction: ltr;
+	text-decoration: underline;
+	text-align: start;
+}
+.hebrew div h3{
+	display: inline;
+	direction: rtl;
+	text-decoration: underline;
+	text-align: start;
+}
+
+
+section.twocol {
+	display: flex;
+	justify-content: space-around;
+	gap: 15px;
+}
+section div.col {
+	max-width:70%;
+	width: fit-content;
+}
+ul.no_decoration {
+	list-style-type:none;
+}
+
+ul {
+	padding-inline-start: 10px;
+}
+
+
+@media screen and (max-width: 880px){
+	section.twocol {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	section div.col {
+		max-width:100%;
+		width: fit-content;
+	}
+	.reverse {
+		flex-direction: column-reverse;
+	}
+}
+
 
 /*  ************ contact us****** */
 
-div#contact {
-	width: 1200px;
-	height: 800px;
-	padding-top: 130px;
-	font-size: 21px;
+ul.contact_v_sign {
+	list-style: none;
+}
+  
+ul.contact_v_sign li:before {
+	content: url("../../img/contact_v_sign_30px.jpg");
+	width: 30px;
+}
+
+.contact_v_sign li{
+	display: block;
+}
+
+img.profile {
+	width:300px;
+	border-radius: 50%;
+}
+
+
+article.contentData img.contact{
+	height: 40px;
+	width: 40px;
+	margin:5px;
+	padding: 0;
+	position: relative;
+	bottom: -10px;
+	
+}
+
+article.contentData img.contactW{
+	height: 30px;
+	width: 30px;
+	margin:5px;
+	padding: 0;
+	position: relative;
+	bottom: -7px;
+}
+
+section.contact p {
+	text-align: justify;
+	margin:0;
+	padding: 0;
+}
+#contact_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
 }

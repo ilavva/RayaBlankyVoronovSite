@@ -88,24 +88,16 @@ a {
 /* content */
 main.content {
     flex: 1;
-    border: 1px yellow dashed;
+    border: 1px chocolate dashed;
     width:100%; 
     max-width: 1200px;
     margin-top: 10px;
     margin-bottom: 10px;
 
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:space-around;
-	gap: 20px;
+	display: block;
 
 }
-/* 
-article {
-	text-align: right;
-	line-height: 36px;
-}
-*/
+
 article.contentData{
 	float: right;
 	color: #000000;
@@ -116,9 +108,10 @@ article.contentData{
 	line-height: 32px;
 }
 
-article.contentData h3 {
+article.contentData h3,
+h3 {
 	font-size: 21px;
-	font-weight: normal;
+	font-weight: bold;
 	text-decoration: underline;
 } 
 
@@ -192,8 +185,8 @@ footer > div span img
 	}
 
 	article.contentData{	
-		width: 100%;
-		margin: 20px;
+		max-width: 100%;
+		margin: 5px;
 	}
 }
 

@@ -43,12 +43,13 @@ function setUpperMenu() {
 	myMenu[7]['title'] = "contact";
 	myMenu[7]['file'] = "pages/contact_us.html";
 
-
+	var strBreadcrumbs = "";
 	strMenu += "<div id='menu'>";
 	for (i = 0; i < myMenu.length; i++) {
 		var strClassName = "menuText";
 		if (myMenu[i]['title'] == filename) {
 			strClassName = "selectedMenuText";
+			strBreadcrumbs = `<a href="../index.html">דף הבית</a> > ${myMenu[i]['page']}`;
 		}
 		if (i > 0) {
 
@@ -58,7 +59,12 @@ function setUpperMenu() {
 	}
 	strMenu += "</div>";
 	document.getElementById("upper_menu").innerHTML = strMenu;
+	if (filename !== "index") {
+		document.querySelector(".breadcrumbs").innerHTML = strBreadcrumbs;
+	}
 }
+
+
 
 function setFooterData() {
 	var suffix = "..";
