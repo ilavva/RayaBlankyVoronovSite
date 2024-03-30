@@ -1,13 +1,7 @@
 article.contentData{
    display: block;
 }
-div.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:center;
-	gap: 15px;
 
-}
 .shalom {
 	border: 3px solid #660033; 
 	max-width: 70%; 
@@ -65,14 +59,6 @@ article.contentData img.floatLeft {
 }
 
 @media screen and (max-width: 740px){
-	div.gallery {
-		
-		flex-wrap: wrap;
-		justify-content:center;
-		
-	
-	}
-
 	.shalom{
 		min-width: auto;
 		margin: 5px;
