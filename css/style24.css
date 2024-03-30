@@ -107,17 +107,52 @@ article.contentData{
     text-align: right;
 	line-height: 32px;
 }
+h1.img {
+    width: fit-content;
+    max-width: fit-content;
+}
+h2#location {
+	text-decoration: none;
+}
 
-article.contentData h3,
-h3 {
+article.contentData h2,
+h2 {
 	font-size: 21px;
-	font-weight: bold;
+	font-weight: bolder;
 	text-decoration: underline;
 } 
 
+h3 {/* question */
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h4 { /*answer*/
+	font-size: 21px;
+	font-weight: normal;
+	text-decoration: underline;
+} 
+
+h5 {/* עלות */
+    font-size: 21px;
+	font-weight: bolder;
+}
+em {
+    font-style: normal;
+    text-decoration: underline;
+}
 .divider {
 	height: 50px;
 }
+.divider40 {
+	height: 40px;
+}
+.divider30 {
+	height: 30px;
+}
+
 
 /* footer */
 
@@ -156,7 +191,12 @@ footer > div span img
 }
 
 @media screen and (max-width: 880px) {
-
+    .divider.unvisible880,
+    .divider50.unvisible880,
+    .divider30.unvisible880 {
+        height: 0px;
+        display: none;
+    }
     div.footer div.footerData {
         width:100%;         
         display: flex;

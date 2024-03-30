@@ -59,12 +59,10 @@ function setUpperMenu() {
 	}
 	strMenu += "</div>";
 	document.getElementById("upper_menu").innerHTML = strMenu;
-	if (filename !== "index") {
+	if (filename !== "index" && document.querySelector(".breadcrumbs")) {
 		document.querySelector(".breadcrumbs").innerHTML = strBreadcrumbs;
 	}
 }
-
-
 
 function setFooterData() {
 	var suffix = "..";
@@ -76,9 +74,6 @@ function setFooterData() {
 	var str = '' +
 		'<div class="footerData"><span> ד"ר רעיה בלנקי-וורונוב</span></div>' +
 		'<div class="footerData">' +
-		//	<!-- <span>raya.bv@gmail.com :ד"ר רעיה בלנקי-וורונוב. לקביעת פגישה חייגו: 054-4934956 או כתבו ל</span> -->
-		//	<!-- <span>לקביעת פגישה חייגו: 054-4934956<img src="'+suffix+'/img/call_FILL0_wght400_GRAD0_opsz24.png" alt="Call 054-4934956" /></span> -->
-		//	<!-- <span>או כתבו ל raya.bv@gmail.com <img src="'+suffix+'/img/mail_FILL0_wght400_GRAD0_opsz24.png" alt="mailto raya.bv@gmail.com" /></span> -->
 		'	<span><a href="tel:054-4934956">לקביעת פגישה חייגו: 054-4934956<img src="' + suffix + '/img/call_FILL0_wght400_GRAD0_opsz24.png" alt="Call 054-4934956" /> </a></span>' +
 		'	<span><a href="mailto:raya.bv@gmail.com" target="_blank">או כתבו ל raya.bv@gmail.com <img src="' + suffix + '/img/mail_FILL0_wght400_GRAD0_opsz24.png" alt="mailto raya.bv@gmail.com" /> </a></span>' +
 		'</div>' +

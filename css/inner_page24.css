@@ -1,6 +1,7 @@
 /*  ************General****** */
 
-div.breadcrumbs {
+div.breadcrumbs,
+div.breadcrumbs_more {
 	width: 100%;
 	max-width: 1200px;
 	text-wrap: nowrap;
@@ -16,7 +17,6 @@ div.breadcrumbs {
 
 }
 
-
 img.floatLeft {
 	float: left;
 	margin: auto;
@@ -25,15 +25,12 @@ img.floatLeft {
 	margin-right: 10px;
 }
 
-
-
 article.contentData {
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
 
 	font-weight: normal;
-
 
 	color: #000000;
 	font-family: David;
@@ -43,30 +40,43 @@ article.contentData {
 	line-height: 32px;
 }
 
-
 article.contentData p {
 	min-width: 370px;
-
 }
 
+.answer {
+	padding-top: 15px;
+}
+.answer.continue {
+	padding-top: 1px;
+}
+.question {
+	padding-top: 20px;
+}
+/* article.contentData>h1>img {
+	width: fit-content;
+	display: block;
+	padding: 0px;
+	margin-bottom: 30px;
+} */
 
-article.contentData>h2>img.koteret220px {
+/* article.contentData>h1>img.koteret220px {
 	max-width: 220px;
 	display: block;
 	padding: 0px;
 	margin-bottom: 30px;
 }
-article.contentData>h2>img.koteret445px {
+article.contentData>h1>img.koteret445px {
 	max-width: 445px;
 	padding: 0px;
-}
+} */
 
 article.contentData .placeholder {
 	min-width: 220px;
 	display: block;
 }
 
-article.contentData img.floatLeft {
+/* article.contentData img.floatLeft {
 	float: left;
 	margin: auto;
 	max-width: 370px;
@@ -82,18 +92,41 @@ article.contentData img.floatRight {
 	width: 100%;
 	padding: 5px;
 	display: inline;
-}
+} */
 
 article.contentData img.basic {
 	margin: 1px;
 	max-width: 450px;
 	width: 80%;
+	height: fit-content;
+}
+
+#basicImg, #basicImg2{
+	margin: 1px;
+	max-width: 450px;
+	padding: 0px;
+	height: fit-content;
+	width: 100%;
+	display: block;
+}
+
+/* ************Tipul Rigshi Mevugarim****** */
+
+#tipulRigshi2 {
+	margin: 1px;
+	max-width: 500px;
+	padding: 0px;
+	height: fit-content;
+	width: 100%;
+	display: block;
 }
 
 article.contentData img {
-	width: 100%;
-	max-width: 370px;
+	width: fit-content;
+	max-width: 80%;
+	/* max-width: 370px; */
 	padding: 15px;
+	height: fit-content;
 }
 
 /************ start *******/
@@ -134,15 +167,18 @@ img.about2 {
 	text-align: right;
 }
 
+
 @media screen and (max-width: 880px){
 	div.about1 {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	img.about1 {
+	img.about1 
+	{
 		width :95%;		
 	}
+
 
 	div.about1 div {
 		display: block;
@@ -153,22 +189,20 @@ img.about2 {
 	}
 	
 }
-
-
-
-/*  ************Tipul Rigshi Mevugarim****** */
-
-div#content_tipul_rigshi_mevugarim {
-	width: 1200px;
-	height: 2000px;
-	padding-top: 130px;
-	font-size: 21px;
+@media screen and (max-width: 500px){
+	article.contentData section.twocol img.tipulRigshi2 {
+		border: 2px cornflowerblue dashed;
+		margin: 1px;
+		width: 90%;
+		padding: 0px;
+		height: fit-content;
+		max-width: 100%;
+		display: block;
+	}
 }
 
-img.tipulRigshi2 {
-	margin: 1px;
-	width: 500px;
-}
+
+
 
 /*  ************Music Theraphy****** */
 
@@ -264,13 +298,14 @@ ul.english li{
 	text-align: start;
 }
 
-.english div h3 {
+.english div h2 {
 	display: inline;
 	direction: ltr;
 	text-decoration: underline;
 	text-align: start;
 }
-.hebrew div h3{
+
+.hebrew div h2{
 	display: inline;
 	direction: rtl;
 	text-decoration: underline;
@@ -291,8 +326,8 @@ ul.no_decoration {
 	list-style-type:none;
 }
 
-ul {
-	padding-inline-start: 10px;
+ul, ol {
+	padding-inline-start: 20px;
 }
 
 
