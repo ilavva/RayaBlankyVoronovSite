@@ -79,14 +79,6 @@ article.contentData img.basic {
 	display: block;
 }
 
-div.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content:center;
-	row-gap: 20px;
-	column-gap: 7px;;
-
-}
 
 article.contentData div.gallery>a>img 
 {
@@ -174,12 +166,7 @@ img.about2 {
 		max-width: 100%;
 		display: block;
 	}
-	div.gallery {	
-		flex-wrap: wrap;
-		justify-content:center;
-		
-	
-	}
+
 }
 
 

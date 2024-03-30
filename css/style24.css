@@ -154,6 +154,15 @@ em {
 	height: 30px;
 }
 
+div.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	row-gap: 20px;
+	column-gap: 7px;;
+
+}
+
 
 /* footer */
 
@@ -228,6 +237,12 @@ footer > div span img
 	article.contentData{	
 		max-width: 100%;
 		margin: 5px;
+	}
+    div.gallery {	
+		flex-wrap: wrap;
+		justify-content:center;
+		
+	
 	}
 }
 
