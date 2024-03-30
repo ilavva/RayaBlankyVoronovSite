@@ -96,6 +96,11 @@ article.contentData div.gallery>a>img
 	padding: 0;
 }
 
+img#profileImg {
+	width:300px;
+	border-radius: 50%;
+}
+
 article.contentData img {
 	width: fit-content;
 	max-width: 80%;
@@ -261,10 +266,6 @@ ul.contact_v_sign li:before {
 	display: block;
 }
 
-img.profile {
-	width:300px;
-	border-radius: 50%;
-}
 
 
 article.contentData img.contact{
