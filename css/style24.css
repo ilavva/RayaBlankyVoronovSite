@@ -17,7 +17,7 @@ body {
 
 
 .container {
-    border: 1px blue dashed;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -88,7 +88,7 @@ a {
 /* content */
 main.content {
     flex: 1;
-    border: 1px chocolate dashed;
+  
     width:100%; 
     max-width: 1200px;
     margin-top: 10px;
@@ -110,6 +110,7 @@ article.contentData{
 h1.img {
     width: fit-content;
     max-width: fit-content;
+    margin-bottom: 30px;
 }
 h2#location {
 	text-decoration: none;
