@@ -1,6 +1,7 @@
 /*  ************General****** */
 
-div.breadcrumbs {
+div.breadcrumbs,
+div.breadcrumbs_more {
 	width: 100%;
 	max-width: 1200px;
 	text-wrap: nowrap;
@@ -16,24 +17,12 @@ div.breadcrumbs {
 
 }
 
-
-img.floatLeft {
-	float: left;
-	margin: auto;
-	width: 100%;
-	display: inline;
-	margin-right: 10px;
-}
-
-
-
 article.contentData {
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
 
 	font-weight: normal;
-
 
 	color: #000000;
 	font-family: David;
@@ -43,22 +32,18 @@ article.contentData {
 	line-height: 32px;
 }
 
-
 article.contentData p {
 	min-width: 370px;
-
 }
 
-
-article.contentData>h2>img.koteret220px {
-	max-width: 220px;
-	display: block;
-	padding: 0px;
-	margin-bottom: 30px;
+.answer {
+	padding-top: 15px;
 }
-article.contentData>h2>img.koteret445px {
-	max-width: 445px;
-	padding: 0px;
+.answer.continue {
+	padding-top: 1px;
+}
+.question {
+	padding-top: 20px;
 }
 
 article.contentData .placeholder {
@@ -66,34 +51,54 @@ article.contentData .placeholder {
 	display: block;
 }
 
-article.contentData img.floatLeft {
-	float: left;
-	margin: auto;
-	max-width: 370px;
-	width: 100%;
-	padding: 5px;
-	display: inline;
-}
-
-article.contentData img.floatRight {
-	float: right;
-	margin: auto;
-	max-width: 370px;
-	width: 100%;
-	padding: 5px;
-	display: inline;
-}
 
 article.contentData img.basic {
 	margin: 1px;
 	max-width: 450px;
 	width: 80%;
+	height: fit-content;
+}
+
+#basicImg, #basicImg2{
+	margin: 1px;
+	max-width: 450px;
+	padding: 0px;
+	height: fit-content;
+	width: 100%;
+	display: block;
+}
+
+/* ************Tipul Rigshi Mevugarim****** */
+
+#tipulRigshi2 {
+	margin: 1px;
+	max-width: 500px;
+	padding: 0px;
+	height: fit-content;
+	width: 100%;
+	display: block;
+}
+
+
+article.contentData div.gallery>a>img 
+{
+	width: 384px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+img#profileImg {
+	width:300px;
+	border-radius: 50%;
 }
 
 article.contentData img {
-	width: 100%;
-	max-width: 370px;
+	width: fit-content;
+	max-width: 80%;
+	/* max-width: 370px; */
 	padding: 15px;
+	height: fit-content;
 }
 
 /************ start *******/
@@ -104,10 +109,6 @@ div#content_about {
 	max-width: 1200px;
 	padding-top: 130px;
 	font-size: 21px;
-}
-
-#content_about * {
-	border: yellow 1px dashed;
 }
 
 div.about1 {
@@ -134,15 +135,18 @@ img.about2 {
 	text-align: right;
 }
 
+
 @media screen and (max-width: 880px){
 	div.about1 {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	img.about1 {
+	img.about1 
+	{
 		width :95%;		
 	}
+
 
 	div.about1 div {
 		display: block;
@@ -153,96 +157,18 @@ img.about2 {
 	}
 	
 }
+@media screen and (max-width: 500px){
+	article.contentData section.twocol img.tipulRigshi2 {
+		margin: 1px;
+		width: 90%;
+		padding: 0px;
+		height: fit-content;
+		max-width: 100%;
+		display: block;
+	}
 
-
-
-/*  ************Tipul Rigshi Mevugarim****** */
-
-div#content_tipul_rigshi_mevugarim {
-	width: 1200px;
-	height: 2000px;
-	padding-top: 130px;
-	font-size: 21px;
 }
 
-img.tipulRigshi2 {
-	margin: 1px;
-	width: 500px;
-}
-
-/*  ************Music Theraphy****** */
-
-div#content_kvutzat_gil_itbagrut {
-	width: 1200px;
-	height: 1800px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-
-/*  ************Music Theraphy****** */
-
-div#content_music_therapy {
-	width: 1200px;
-	height: 2300px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-/*  ************Tipul Diadi****** */
-
-div#content_tipul_diadi {
-	width: 1200px;
-	height: 1750px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-/*  ************ cbt****** */
-
-div#content_cbt {
-	width: 1200px;
-	height: 1600px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-
-/*  ************ biofeedback****** */
-
-div#content_biofeedback {
-	width: 1200px;
-	height: 1750px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-/*  ************ social skills****** */
-
-div#content_social_skills {
-	width: 1200px;
-	height: 2450px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-/*  ************ parents guidance****** */
-
-div#content_parents {
-	width: 1200px;
-	height: 1700px;
-	padding-top: 130px;
-	font-size: 21px;
-}
-
-/*  ************ professional training****** */
-
-div#prof_training {
-	width: 1200px;
-	height: 1400px;
-	padding-top: 130px;
-	font-size: 21px;
-}
 
 /*  ************ articles ****** */
 
@@ -264,13 +190,14 @@ ul.english li{
 	text-align: start;
 }
 
-.english div h3 {
+.english div h2 {
 	display: inline;
 	direction: ltr;
 	text-decoration: underline;
 	text-align: start;
 }
-.hebrew div h3{
+
+.hebrew div h2{
 	display: inline;
 	direction: rtl;
 	text-decoration: underline;
@@ -291,8 +218,8 @@ ul.no_decoration {
 	list-style-type:none;
 }
 
-ul {
-	padding-inline-start: 10px;
+ul, ol {
+	padding-inline-start: 20px;
 }
 
 
@@ -326,10 +253,6 @@ ul.contact_v_sign li:before {
 	display: block;
 }
 
-img.profile {
-	width:300px;
-	border-radius: 50%;
-}
 
 
 article.contentData img.contact{
