@@ -1,6 +1,6 @@
 
 function setUpperMenu() {
-	var myMenu = new Array(8);
+	var myMenu = [];
 	var strMenu = "";
 	var relative_path = "../";
 	var filename = document.getElementById("upper_menu").getAttribute("page");
@@ -8,40 +8,15 @@ function setUpperMenu() {
 		relative_path = "./";
 	}
 
-	for (i = 0; i < myMenu.length; i++) {
-		myMenu[i] = new Array(3);
-	}
-	myMenu[0]['page'] = "דף הבית";
-	myMenu[0]['title'] = "index";
-	myMenu[0]['file'] = "index.html";
-
-	myMenu[1]['page'] = "מתחילים";
-	myMenu[1]['title'] = "start";
-	myMenu[1]['file'] = "pages/start.html";
-
-	myMenu[2]['page'] = "אודותי";
-	myMenu[2]['title'] = "about";
-	myMenu[2]['file'] = "pages/about.html";
-
-	myMenu[3]['page'] = "טיפולים פרטניים";
-	myMenu[3]['title'] = "tipul_partani";
-	myMenu[3]['file'] = "pages/tipul_partani.html";
-
-	myMenu[4]['page'] = "טיפולים קבוצתיים";
-	myMenu[4]['title'] = "tipul_kvutzati";
-	myMenu[4]['file'] = "pages/tipul_kvutzati.html";
-
-	myMenu[5]['page'] = "ייעוץ והדרכה";
-	myMenu[5]['title'] = "yiutz_adraha";
-	myMenu[5]['file'] = "pages/yiutz_adraha.html";
-
-	myMenu[6]['page'] = "מאמרים";
-	myMenu[6]['title'] = "articles";
-	myMenu[6]['file'] = "pages/articles.html";
-
-	myMenu[7]['page'] = "צור קשר";
-	myMenu[7]['title'] = "contact";
-	myMenu[7]['file'] = "pages/contact_us.html";
+	myMenu.push({ 'page': "דף הבית", 'title': "index", 'file': "index.html" });
+	myMenu.push({ 'page': "מתחילים", 'title': "start", 'file': "pages/start.html" });
+	myMenu.push({ 'page': "אודותי", 'title': "about", 'file': "pages/about.html" });
+	myMenu.push({ 'page': "טיפולים פרטניים", 'title': "tipul_partani", 'file': "pages/tipul_partani.html" });
+	myMenu.push({ 'page': "טיפולים קבוצתיים", 'title': "tipul_kvutzati", 'file': "pages/tipul_kvutzati.html" });
+	myMenu.push({ 'page': "ייעוץ והדרכה", 'title': "yiutz_adraha", 'file': "pages/yiutz_adraha.html" });
+	myMenu.push({ 'page': "קורסים", 'title': "courses", 'file': "pages/courses.html" });
+	myMenu.push({ 'page': "מאמרים", 'title': "articles", 'file': "pages/articles.html" });
+	myMenu.push({ 'page': "צור קשר", 'title': "contact", 'file': "pages/contact_us.html" });
 
 	var strBreadcrumbs = "";
 	strMenu = `

@@ -14,14 +14,14 @@
     --navbar-background-color-menu: #e5d1e5fc;  
     --navbar-background-color-topnav: #00BAF0;
     --navbar-background-color-l1: #c397c4; 
-    --navbar-background-color-l2:  white;
+    --navbar-background-color-l2: white; /* #c397c4; /* white; */
     --navbar-background: #99669900;
    
 
     --navbar-font-color-selected-menu:#a14aa1;
     --navbar-font-color-menu:#893491; /*rgb(85, 26, 139); */
 
-    --navbar-font-color: #c479cb;/* #551a8b;*/
+    --navbar-font-color: #65356a;/* #c479cb;/* #551a8b;*/
 
    
     --menu-border-color: #aa58ae2b;
