@@ -44,20 +44,22 @@ function setUpperMenu() {
 	myMenu[7]['file'] = "pages/contact_us.html";
 
 	var strBreadcrumbs = "";
-	strMenu += "<div id='menu'>";
+	strMenu = `
+  <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+	  <ul class="menu">`;
+
 	for (i = 0; i < myMenu.length; i++) {
 		var strClassName = "menuText";
 		if (myMenu[i]['title'] == filename) {
 			strClassName = "selectedMenuText";
 			strBreadcrumbs = `<a href="../index.html">דף הבית</a> > ${myMenu[i]['page']}`;
 		}
-		if (i > 0) {
-
-			strMenu += "<span class='menuSymbol'>&#9834;</span>"
-		}
-		strMenu += `<span  class='${strClassName}' name='about'><a href='${relative_path}${myMenu[i]['file']}'>${myMenu[i]['page']}</a></span>`;
+		strMenu += `<li  class='${strClassName}' name='${myMenu[i]['title']}'><a href='${relative_path}${myMenu[i]['file']}'>${myMenu[i]['page']}</a></li>`;
 	}
-	strMenu += "</div>";
+	strMenu += "</ul><div></div>";
 	document.getElementById("upper_menu").innerHTML = strMenu;
 	if (filename !== "index" && document.querySelector(".breadcrumbs")) {
 		document.querySelector(".breadcrumbs").innerHTML = strBreadcrumbs;

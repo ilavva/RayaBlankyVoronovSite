@@ -6,10 +6,10 @@
 }
 
 body {
+    background: var(--color-background);
 
-    background: #c397c4;
     font-family: verdana, arial, sans-serif;
-    color: #000000;
+    color: var(--color-font-text);
     font-size: 12px;
     font-weight: lighter;   
     overflow-x: hidden;
@@ -45,45 +45,7 @@ header>img
     height: auto;
     margin: auto;
 }
-/* start menu style */
-div.upper_menu {
-    width:97%;
-    max-width: 1200px;  
 
-}
-#menu {
-
-    margin: auto;    
-
-    display: flex;
-	flex-wrap: wrap;
-	justify-content:space-evenly;
-}
-.selectedMenuText 
-a {
-    color: #330066;
-    font-family: David;
-    font-size: 16px;
-    height: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-wrap:nowrap;
-}
-
-.menuText a {
-    color: rgb(85, 26, 139);
-    font-family: David;
-    font-size: 16px;
-    font-weight:bolder;
-    text-align: right;
-    text-wrap:nowrap;
-}
-.menuSymbol {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 19px;
-    color: rgb(85, 26, 139);
-	padding: 0px 15px;
-}
 
 /* content */
 main.content {
@@ -100,7 +62,7 @@ main.content {
 
 article.contentData{
 	float: right;
-	color: #000000;
+	color: var(--color-font-text);
     font-family: David;
 	font-size: 21px;
     
@@ -174,14 +136,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    background: #996699;   
+    background:var(--color-background-menu);   
     padding:15px 10px;
     margin: auto;
 }
 
 footer *,
 .footer * {
-    color:white;
+    color:var(--color-font-footer);
     text-decoration: none;
     font-size: medium;
     font-weight: lighter; 
