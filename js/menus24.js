@@ -3,8 +3,8 @@ function setUpperMenu() {
 	var myMenu = [];
 	var strMenu = "";
 	var relative_path = "../";
-	var filename = document.getElementById("upper_menu").getAttribute("page");
-	if (filename === "index") {
+	var page = document.getElementById("header").getAttribute("page");
+	if (page === "index") {
 		relative_path = "./";
 	}
 
@@ -19,31 +19,41 @@ function setUpperMenu() {
 	myMenu.push({ 'page': "צור קשר", 'title': "contact", 'file': "pages/contact_us.html" });
 
 	var strBreadcrumbs = "";
+	// 	<picture id="logo">
+	// 	<source media="(max-width:780px)" srcset="${relative_path}img/logo_700.jpg">
+	// 	<img src="${relative_path}img/logo.jpg" alt="קליניקה לפסיכותרפיה" >
+	// </picture>
 	strMenu = `
-  <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-	  <ul class="menu">`;
+			<div id="logo">
+			<h1>קליניקה לפסיכותרפיה</h1>
+			<h2>טיפול ~ לימוד ~ הדרכה</h2>
+			</div>
+
+			<div id="upper_menu" page="${page}">
+  				<input id="menu-toggle" type="checkbox" />
+        		<label class='menu-button-container' for="menu-toggle">
+        		<div class='menu-button'></div>
+      		</label>
+	  		<ul class="menu">`;
 
 	for (i = 0; i < myMenu.length; i++) {
 		var strClassName = "menuText";
-		if (myMenu[i]['title'] == filename) {
+		if (myMenu[i]['title'] == page) {
 			strClassName = "selectedMenuText";
-			strBreadcrumbs = `<a href="../index.html">דף הבית</a> > ${myMenu[i]['page']}`;
+			strBreadcrumbs = `<a href="${relative_path}index.html">דף הבית</a> > ${myMenu[i]['page']}`;
 		}
 		strMenu += `<li  class='${strClassName}' name='${myMenu[i]['title']}'><a href='${relative_path}${myMenu[i]['file']}'>${myMenu[i]['page']}</a></li>`;
 	}
-	strMenu += "</ul><div></div>";
-	document.getElementById("upper_menu").innerHTML = strMenu;
-	if (filename !== "index" && document.querySelector(".breadcrumbs")) {
+	strMenu += "</ul></div>";
+	document.getElementById("header").innerHTML = strMenu;
+	if (page !== "index" && document.querySelector(".breadcrumbs")) {
 		document.querySelector(".breadcrumbs").innerHTML = strBreadcrumbs;
 	}
 }
 
 function setFooterData() {
 	var suffix = "..";
-	var filename = document.getElementById("upper_menu").getAttribute("page");
+	var filename = document.getElementById("header").getAttribute("page");
 	if (filename === "index") {
 		suffix = ".";
 	}

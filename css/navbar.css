@@ -1,68 +1,104 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+#header {
+  width:100%;
+  max-width: 1200px;
+  top: 0px;
+  height: 6rem;
+  background-color: var(----color-background);
+  background-image: url("./../img/header.jpg");
+  background-size:cover;
+}
 
-/* 
-h2 {
-  vertical-align: center;
+
+#header h1
+{
+  font-size: 3rem;
+  
+ font-style: italic;
+ font-weight: bold;
+ font-stretch:wider;
+  background: #ffffff;
+  background: linear-gradient(60deg,#ffffff 0%, var(--font-header-color2) 80%);
+  background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 40%);
+  background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%);
+
+  /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
+  text-shadow: -7px 7px 7px rgba(254, 252, 255, 1);
+  
+}
+#header h2 {
+  font-size: 1.5rem;
+  
+  font-style: italic;
+  font-weight: bold;
+  font-stretch:wider;
+   background: #ffffff;
+   background: linear-gradient(60deg,#ffffff 0%, #741267 80%);
+   background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 80%);
+   background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%);
+ 
+   /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
+   text-shadow: -7px 5px 7px rgba(255,255,255,1);
+  text-decoration-line: none; 
+  text-decoration: none;
   text-align: center;
+  
+  
 }
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-* {
-  font-family: "Raleway";
-  box-sizing: border-box;
-} */
 
 #upper_menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--navbar-background-color-topnav);
-  background: linear-gradient(to left bottom , var(--navbar-background-color-l1), var(--navbar-background-color-l2) );
+  /* background-color: var(--navbar-background-color-topnav); */
+  /* background: linear-gradient(to left bottom , var(--navbar-background-color-l1), var(--navbar-background-color-l2) ); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: var(--navbar-font-color);
   height: 3rem;
-  /* padding: 1em; */
+
 }
 
 .menu {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: space-around;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  z-index:100;
 }
 
-.menu > li {
-  margin: 0 0.6rem;
-  overflow: hidden;
+.menu > li a{
+  width:100%;
+  text-align: center;
+  height: 100%;
+  font-size: 1.1rem;
+  padding:0.5rem; 
+ 
 }
-
-.selectedMenuText 
-a {
+.selectedMenuText a {
     color: var(--navbar-font-color-selected-menu);
     font-family: David;
-    font-size: 1.1rem;
-    height: 1rem;
     font-weight: bold;
     text-decoration: none;
     text-wrap:nowrap;
-    
 }
 
 .menuText a {
     color: var(--navbar-font-color-menu);
     font-family: David;
-    font-size: 1rem;
     font-weight:bolder;
     text-align: right;
     text-wrap:nowrap;
+}
+.menuText:hover {
+  filter:brightness(110%);
+  font-weight: bolder;
 }
 
 .menu-button-container {
@@ -117,13 +153,17 @@ a {
 }
 
 @media (max-width: 780px) {
+  #logo {
+    src: url("./img/logo.jpg");
+  }
   .menu-button-container {
     display: flex;
+    z-index: 101;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 92px;
+    margin-top: 100px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -142,17 +182,25 @@ a {
     height: 3.5em;
     padding: 1em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+  
   }
   .menu > li {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0.5em 0;
+    /* padding: 0.5em 0; */
     width: 100%;
     color: var(--navbar-font-color);
     background-color: var(--navbar-background-color-topnav);
     background:  var(--navbar-background-color-menu) ;
-  
+    opacity: 0;
+  }
+  .menu  {
+    padding: 0;
+  }
+  .menu > li a {
+    padding: 0;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid var(--menu-border-bottom-color);

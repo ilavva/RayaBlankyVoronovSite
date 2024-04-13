@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&family=Noto+Serif+Hebrew:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
     /* site colors */
     --color-background:#c397c4;
@@ -5,9 +6,10 @@
     --color-background-menu: #996699;
     --color-font-text:#000000;
     
-
-
     --color-font-footer:white;
+
+    --font-header-color1: white;
+    --font-header-color2:#650270;
 
     /* colors for navbar.css */
     --navbar-background-color:  #ac60b3;
@@ -26,4 +28,11 @@
    
     --menu-border-color: #aa58ae2b;
     --menu-border-bottom-color: #ab66be;
+
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:normal;
+    font-style: normal;
+    
 }
