@@ -10,7 +10,8 @@ div.breadcrumbs_more {
 	text-align: right;
 	margin: 10px auto;
 	padding-right: 10px;
-	font-size: 12px;
+	padding-top: 1rem;
+	font-size: 1rem;
 	font-weight: normal;
 	color: black;
 	direction: rtl;

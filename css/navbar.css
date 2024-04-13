@@ -20,12 +20,12 @@
  font-weight: bold;
  font-stretch:wider;
   background: #ffffff;
-  background: radial-gradient(circle, #741267, white);
+  /* background: radial-gradient(circle, #741267, white);
   background: -webkit-radial-gradient(circle, #741267, white);
-  background: -moz-radial-gradient(circle, #741267, white);
-  /* background: linear-gradient(60deg,#ffffff 0%, var(--font-header-color2) 80%); */
-  /* background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 40%); */
-  /* background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
+  background: -moz-radial-gradient(circle, #741267, white); */
+  background: linear-gradient(60deg,#ffffff 0%,  #b167b9 80%);
+  background: -webkit-linear-gradient(60deg,#ffffff 0%,   #b167b9  40%);
+  background: -moz-linear-gradient(60deg,#ffffff 0%,  #b167b9 80%);
 
   /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
   -webkit-background-clip: text;
@@ -42,13 +42,12 @@
   font-stretch:wider;
    background: #ffffff;
    
-   background: radial-gradient(circle, #741267, white);
+   /* background: radial-gradient(circle, #741267, white);
    background: -webkit-radial-gradient(circle, #741267, white);
-   background: -moz-radial-gradient(circle, #741267, white);
-   /* background: linear-gradient(60deg,#ffffff 0%, #741267 80%); */
-   /* background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
-   /* background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
- 
+   background: -moz-radial-gradient(circle, #741267, white); */
+   background: linear-gradient(60deg, #b167b9 80%,#ffffff 0% );
+   background: -webkit-linear-gradient(60deg,   #b167b9  40%,#ffffff 0%);
+   background: -moz-linear-gradient(60deg,  #b167b9 80%,#ffffff 0%,  #b167b9 80%);
    /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
