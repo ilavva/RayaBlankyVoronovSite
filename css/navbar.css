@@ -20,18 +20,15 @@
  font-weight: bold;
  font-stretch:wider;
   background: #ffffff;
-  /* background: radial-gradient(circle, #741267, white);
-  background: -webkit-radial-gradient(circle, #741267, white);
-  background: -moz-radial-gradient(circle, #741267, white); */
-  background: linear-gradient(60deg,#ffffff 0%,  #b167b9 80%);
-  background: -webkit-linear-gradient(60deg,#ffffff 0%,   #b167b9  40%);
-  background: -moz-linear-gradient(60deg,#ffffff 0%,  #b167b9 80%);
 
-  /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
+  background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
+  background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
+  background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-  text-shadow: -7px 7px 7px rgba(254, 252, 255, 1);
+  text-shadow: -7px 10px 7px rgba(254, 252, 255, 1);
   
 }
 #header h2 {
@@ -42,17 +39,14 @@
   font-stretch:wider;
    background: #ffffff;
    
-   /* background: radial-gradient(circle, #741267, white);
-   background: -webkit-radial-gradient(circle, #741267, white);
-   background: -moz-radial-gradient(circle, #741267, white); */
-   background: linear-gradient(60deg, #b167b9 80%,#ffffff 0% );
-   background: -webkit-linear-gradient(60deg,   #b167b9  40%,#ffffff 0%);
-   background: -moz-linear-gradient(60deg,  #b167b9 80%,#ffffff 0%,  #b167b9 80%);
-   /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
+   background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
+   background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
+   background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
+   
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-   text-shadow: -7px 5px 7px rgba(255,255,255,1);
+   text-shadow: -7px 10px 7px rgba(255,255,255,1);
   text-decoration-line: none; 
   text-decoration: none;
   text-align: center;
@@ -165,12 +159,13 @@
     background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter1) ),url("./../img/header.jpg");
   }
   #header h1
-{
-  padding-right: 1rem;
-  font-size: 1.5rem;
-}
+  {
+    padding-right: 1rem;
+    font-size:2.3rem;
+  }
   #header h2 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    
   }
   #logo {
     src: url("./img/logo.jpg");

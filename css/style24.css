@@ -107,20 +107,28 @@ div.gallery {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-around;
-	/* row-gap: 20px;
-	column-gap: 7px;; */
+    row-gap: 20px;
+}
 
+div.gallery>a {
+    margin: 0;
+    padding:0;
+    min-width:30%;
+    max-width: 220px;
 }
 
 .card {
     position: relative;
     width: 100%;
+   
 }
   
 .image {
     display: block;
     width: 100%;
     height: auto;
+    margin: auto;
+   
 }
   
 .overlay {
