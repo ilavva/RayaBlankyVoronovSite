@@ -7,20 +7,25 @@
   background-color: var(----color-background);
   background-image: url("./../img/header.jpg");
   background-size:cover;
+  
 }
 
 
 #header h1
 {
+  padding-right: 1rem;
   font-size: 3rem;
   
  font-style: italic;
  font-weight: bold;
  font-stretch:wider;
   background: #ffffff;
-  background: linear-gradient(60deg,#ffffff 0%, var(--font-header-color2) 80%);
-  background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 40%);
-  background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%);
+  background: radial-gradient(circle, #741267, white);
+  background: -webkit-radial-gradient(circle, #741267, white);
+  background: -moz-radial-gradient(circle, #741267, white);
+  /* background: linear-gradient(60deg,#ffffff 0%, var(--font-header-color2) 80%); */
+  /* background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 40%); */
+  /* background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
 
   /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
   -webkit-background-clip: text;
@@ -36,9 +41,13 @@
   font-weight: bold;
   font-stretch:wider;
    background: #ffffff;
-   background: linear-gradient(60deg,#ffffff 0%, #741267 80%);
-   background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 80%);
-   background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%);
+   
+   background: radial-gradient(circle, #741267, white);
+   background: -webkit-radial-gradient(circle, #741267, white);
+   background: -moz-radial-gradient(circle, #741267, white);
+   /* background: linear-gradient(60deg,#ffffff 0%, #741267 80%); */
+   /* background: -webkit-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
+   /* background: -moz-linear-gradient(60deg,#ffffff 0%, #741267 80%); */
  
    /* background: -webkit-linear-gradient(to left ,var(--font-header-color1), var(--font-header-color2)); */
    -webkit-background-clip: text;
@@ -153,6 +162,9 @@
 }
 
 @media (max-width: 780px) {
+  #header {
+    background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter1) ),url("./../img/header.jpg");
+  }
   #logo {
     src: url("./img/logo.jpg");
   }

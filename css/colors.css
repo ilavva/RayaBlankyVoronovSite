@@ -2,7 +2,7 @@
 :root {
     /* site colors */
     --color-background:#c397c4;
-    
+    --color-background-filter1:rgba(195, 151, 196, 0.85);
     --color-background-menu: #996699;
     --color-font-text:#000000;
     
