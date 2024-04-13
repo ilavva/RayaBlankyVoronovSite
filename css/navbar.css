@@ -164,6 +164,14 @@
   #header {
     background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter1) ),url("./../img/header.jpg");
   }
+  #header h1
+{
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+  #header h2 {
+    font-size: 0.8rem;
+  }
   #logo {
     src: url("./img/logo.jpg");
   }
