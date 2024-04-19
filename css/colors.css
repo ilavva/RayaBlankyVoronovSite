@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&family=Noto+Serif+Hebrew:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
     /* site colors */
-    --color-background:#c397c4;
-    --color-background-filter1:rgba(195, 151, 196, 0.85);
-    --color-background-menu: #996699;
+    --color-background:#c397c4;/*== rgb(195, 151, 196);*/
+    
+    --color-background-filter1:rgba(255, 255, 255, 0.32);
+    --color-background-filter2:rgba(195, 151, 196, 0);
+    --color-background-menu: rgb(153, 102, 153); /* == #996699;*/
     --color-font-text:#000000;
     
     --color-font-footer:white;
@@ -18,9 +20,11 @@
     --navbar-background-color-l1: #c397c4; 
     --navbar-background-color-l2: white; /* #c397c4; /* white; */
     --navbar-background: #99669900;
+    --menu-shadow-color:#5a475d62;
    
     --background-color-contact-item: #d8b0d8;
-
+    --background-color-contact-item-hover: #e5d1e5fc; 
+    
     --navbar-font-color-selected-menu:#a14aa1;
     --navbar-font-color-menu:#893491; /*rgb(85, 26, 139); */
 

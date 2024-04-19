@@ -19,22 +19,19 @@ function setUpperMenu() {
 	myMenu.push({ 'page': "צור קשר", 'title': "contact", 'file': "pages/contact_us.html" });
 
 	var strBreadcrumbs = "";
-	// 	<picture id="logo">
-	// 	<source media="(max-width:780px)" srcset="${relative_path}img/logo_700.jpg">
-	// 	<img src="${relative_path}img/logo.jpg" alt="קליניקה לפסיכותרפיה" >
-	// </picture>
-	strMenu = `
-			<div id="logo">
-			<h1>קליניקה לפסיכותרפיה</h1>
-			<h2>טיפול ~ לימוד ~ הדרכה</h2>
-			</div>
 
-			<div id="upper_menu" page="${page}">
+	strMenu = `
+		<div id="logo_title">
+				<h1>קליניקה לפסיכותרפיה</h1>
+				<h2>טיפול ~ לימוד ~ הדרכה</h2>
+		</div>
+
+		<div id="upper_menu" page="${page}">
   				<input id="menu-toggle" type="checkbox" />
         		<label class='menu-button-container' for="menu-toggle">
         		<div class='menu-button'></div>
-      		</label>
-	  		<ul class="menu">`;
+      	</label>
+	  	<ul class="menu">`;
 
 	for (i = 0; i < myMenu.length; i++) {
 		var strClassName = "menuText";
@@ -42,6 +39,7 @@ function setUpperMenu() {
 			strClassName = "selectedMenuText";
 			strBreadcrumbs = `<a href="${relative_path}index.html">דף הבית</a> > ${myMenu[i]['page']}`;
 		}
+
 		strMenu += `<li  class='${strClassName}' name='${myMenu[i]['title']}'><a href='${relative_path}${myMenu[i]['file']}'>${myMenu[i]['page']}</a></li>`;
 	}
 	strMenu += "</ul></div>";

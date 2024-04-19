@@ -1,91 +1,57 @@
-/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
-#header {
+ #header {
   width:100%;
   max-width: 1200px;
   top: 0px;
-  height: 6rem;
-  background-color: var(----color-background);
-  background-image: url("./../img/header.jpg");
-  background-size:cover;
-  
+  height: auto;
+  background: no-repeat url("./../img/logo.jpg");
+  background-size: contain; 
 }
 
-
-#header h1
-{
-  padding-right: 1rem;
-  font-size: 3rem;
-  
- font-style: italic;
- font-weight: bold;
- font-stretch:wider;
-  background: #ffffff;
-
-  background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
-  background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
-  background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-  text-shadow: -7px 10px 7px rgba(254, 252, 255, 1);
-  
-}
-#header h2 {
-  font-size: 1.5rem;
-  padding-right: 4rem;
-  font-style: italic;
-  font-weight: bold;
-  font-stretch:wider;
-   background: #ffffff;
-   
-   background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
-   background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
-   background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
-   
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-   text-shadow: -7px 10px 7px rgba(255,255,255,1);
-  text-decoration-line: none; 
-  text-decoration: none;
-  /* text-align: center; */
-  
-  
+#logo_title{
+  visibility:hidden;
 }
 
 #upper_menu {
+  position: relative;
+  top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* background-color: var(--navbar-background-color-topnav); */
-  /* background: linear-gradient(to left bottom , var(--navbar-background-color-l1), var(--navbar-background-color-l2) ); */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: var(--navbar-font-color);
   height: 3rem;
 
 }
 
-.menu {
+.menu{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: no-wrap;
   list-style-type: none;
   z-index:100;
+  gap:0.2rem;
+ 
 }
 
-.menu > li a{
-  width:100%;
+.menu> li a{
+  border-radius:  0.5rem;
   text-align: center;
   height: 100%;
   font-size: 1.1rem;
   padding:0.5rem; 
+  text-decoration-line: none;
+  box-shadow: 3px 3px 2px 2px var(--menu-shadow-color);
+  -webkit-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
+  -moz-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
  
+}
+.menu > li a:hover{
+  background-color: var( --navbar-background-color-menu);
 }
 .selectedMenuText a {
     color: var(--navbar-font-color-selected-menu);
-    font-family: David;
+    /* font-family: David; */
     font-weight: bold;
     text-decoration: none;
     text-wrap:nowrap;
@@ -93,7 +59,7 @@
 
 .menuText a {
     color: var(--navbar-font-color-menu);
-    font-family: David;
+    /* font-family: David; */
     font-weight:bolder;
     text-align: right;
     text-wrap:nowrap;
@@ -160,21 +126,10 @@
   transform: rotate(-45deg); 
 }
 
-@media (max-width: 780px) {
+
+@media (max-width: 830px) {
   #header {
-    background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter1) ),url("./../img/header.jpg");
-  }
-  #header h1
-  {
-    padding-right: 1rem;
-    font-size:2.3rem;
-  }
-  #header h2 {
-    font-size: 1.2rem;
-    
-  }
-  #logo {
-    src: url("./img/logo.jpg");
+    height: 80px;
   }
   .menu-button-container {
     margin-right: 7px;
@@ -187,18 +142,21 @@
   }
  
   .menu-button-container {
+    position: absolute;
+    top:-20px;
+    left:10px;
     display: flex;
     z-index: 101;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 100px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap:0;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -234,5 +192,86 @@
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid var(--menu-border-bottom-color);
+  }
+
+  .menu> li a{
+    border-radius:0;
+    border: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    padding:0rem; 
+    text-decoration-line: none;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+   
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  #header {
+    background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter2) ),url("./../img/header.jpg");
+    /* background-image: url("./../img/header.jpg"); */
+    background-size: contain;
+  }
+
+  #logo_title {
+    visibility:visible;
+  }
+
+  
+  #logo_title h1
+  {
+    padding-right: 1rem;
+    font-size:2.3rem;
+
+    
+  font-style: italic;
+  font-weight: bold;
+  font-stretch:wider;
+    background: #ffffff;
+
+    background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
+    background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
+    background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
+
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
+    text-shadow: -7px 10px 7px rgba(254, 252, 255, 1);
+    
+  }
+  #logo_title h2 {
+    font-size: 1.5rem;
+    padding-right: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    font-stretch:wider;
+    background: #ffffff;
+    
+    background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
+    background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
+    background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
+    
+    -webkit-background-clip: text;
+    background-clip:text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
+    text-shadow: -7px 10px 7px rgba(255,255,255,1);
+    text-decoration-line: none; 
+    text-decoration: none;
+  
+  }
+  .menu-button-container {
+    position: absolute;
+    top:-60px;
+    left:10px;
   }
 }

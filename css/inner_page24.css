@@ -8,7 +8,7 @@ div.breadcrumbs_more {
 	height: 25px;
 	float: right;
 	text-align: right;
-	margin: 10px auto;
+	margin: 2rem 2rem;
 	padding-right: 10px;
 	padding-top: 1rem;
 	font-size: 1rem;
@@ -26,7 +26,7 @@ article.contentData {
 	font-weight: normal;
 
 	color: var(--color-font-text);
-	font-family: David;
+	/* font-family: David; */
 	font-size: 21px;
 
 	text-align: right;
@@ -55,10 +55,11 @@ article.contentData .placeholder {
 img.basic {
 	border-radius:50px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: auto;
 }
 
 article.contentData img.basic {
-	margin: 1px;
+	/* margin: 1px; */
 	max-width: 450px;
 	width: 80%;
 	height: fit-content;
@@ -66,24 +67,13 @@ article.contentData img.basic {
 }
 
 #basicImg, #basicImg2{
-	margin: 1px;
+	/* margin: 1px; */
 	max-width: 450px;
 	padding: 0px;
 	height: fit-content;
 	width: 100%;
 	display: block;
 	
-}
-
-/* ************Tipul Rigshi Mevugarim****** */
-
-#tipulRigshi2 {
-	margin: 1px;
-	max-width: 500px;
-	padding: 0px;
-	height: fit-content;
-	width: 100%;
-	display: block;
 }
 
 
@@ -98,6 +88,7 @@ article.contentData div.gallery>a>img
 img#profileImg {
 	width:300px;
 	border-radius: 50%;
+	margin: auto;
 }
 
 article.contentData img {
@@ -246,18 +237,18 @@ ul, ol {
 /*  ************ contact us****** */
 
 ul.contact_v_sign {
-	list-style: none;
+	list-style-type: "♪";
 }
-  
-ul.contact_v_sign li:before {
-	/* content: &#119136; url("../../img/contact_v_sign_30px.jpg"); */
-	content: `&#119136`;
+  ul.contact_v_sign li {
+	padding: 0.5rem 1rem;
+  }
+/* ul.contact_v_sign li:before {
 	width: 30px;
-}
+} */
 
-.contact_v_sign li{
+/* .contact_v_sign li{
 	display: block;
-}
+} */
 
 
 
