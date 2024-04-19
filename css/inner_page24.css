@@ -250,7 +250,8 @@ ul.contact_v_sign {
 }
   
 ul.contact_v_sign li:before {
-	content: url("../../img/contact_v_sign_30px.jpg");
+	/* content: &#119136; url("../../img/contact_v_sign_30px.jpg"); */
+	content: `&#119136`;
 	width: 30px;
 }
 
@@ -280,9 +281,18 @@ article.contentData img.contactW{
 }
 
 section.contact p {
-	text-align: justify;
-	margin:0;
-	padding: 0;
+	text-align: right;
+	margin:10px;
+	padding: 10px;
+	background-color: var(--navbar-background-color-menu);
+	border-radius: 40px;
+	vertical-align: middle;
+
+}
+#contact_container  section.twocol.contact p ,
+#contact_container  section.twocol.contact p  img
+{
+	background-color: var(--background-color-contact-item);
 }
 #contact_container {
 	display: flex;
