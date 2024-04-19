@@ -2,8 +2,8 @@
 
 div.breadcrumbs,
 div.breadcrumbs_more {
-	width: 100%;
-	max-width: 1200px;
+	/* width: 100%; */
+	/* max-width: 1200px; */
 	text-wrap: nowrap;
 	height: 25px;
 	float: right;
@@ -13,14 +13,14 @@ div.breadcrumbs_more {
 	padding-top: 1rem;
 	font-size: 1rem;
 	font-weight: normal;
-	color: black;
+	color:  var(--color-font-text);
 	direction: rtl;
 
 }
 
 article.contentData {
 	margin-top: 10px;
-	padding: 15px;
+	/* padding: 15px; */
 	padding-bottom: 20px;
 
 	font-weight: normal;
@@ -33,9 +33,9 @@ article.contentData {
 	line-height: 32px;
 }
 
-article.contentData p {
-	min-width: 370px;
-}
+article.contentData p a {
+	color: var(--color-font-text-a);
+} 
 
 .answer {
 	padding-top: 15px;
@@ -154,6 +154,7 @@ img.about2 {
 	
 }
 @media screen and (max-width: 500px){
+
 	article.contentData section.twocol img.tipulRigshi2 {
 		margin: 1px;
 		width: 90%;
@@ -161,6 +162,9 @@ img.about2 {
 		height: fit-content;
 		max-width: 100%;
 		display: block;
+	}
+	.coursive {
+		font-size: smaller;
 	}
 
 }

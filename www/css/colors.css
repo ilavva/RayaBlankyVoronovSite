@@ -6,7 +6,10 @@
     --color-background-filter1:rgba(255, 255, 255, 0.32);
     --color-background-filter2:rgba(195, 151, 196, 0);
     --color-background-menu: rgb(153, 102, 153); /* == #996699;*/
-    --color-font-text:#000000;
+    
+    --color-font-text:rgb(83, 42, 83);
+    --color-font-text-a:rgb(111, 37, 111);
+    --color-font-text-a-hover:rgb(176, 82, 176);
     
     --color-font-footer:white;
 
