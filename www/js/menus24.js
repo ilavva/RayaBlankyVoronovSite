@@ -1,3 +1,18 @@
+const prices = {
+	"price_cbt": "400",
+	"price_tipul_bemusika": "450",
+	"price_biofeedback": "400",
+	"price_tipul_rigshi_kids": "400",
+	"price_tipul_rigshi_mevugarim": "400",
+	"price_tipul_diadi": "400",
+	"price_gil_itbagrut_partani": "400",
+	"price_gil_itbagrut_kvuza": "500",
+	"price_parents": "500",
+	"price_prof_training": "400",
+	"price_social_skills_partani": "300",
+	"price_social_skills_kvuza": "500",
+	"price_start_intake": "400",
+}
 
 function setUpperMenu() {
 	var myMenu = [];
@@ -92,5 +107,15 @@ function setFooterData() {
 	document.querySelector("footer").innerHTML = str;
 
 }
+function updatePrices() {
+	for ([elem_id, price] of Object.entries(prices)) {
+		let elem = document.querySelector(`#${elem_id}`);
+		if (elem) {
+			elem.innerHTML = price;
+		}
+
+	}
+}
 setFooterData();
 setUpperMenu();
+updatePrices();
