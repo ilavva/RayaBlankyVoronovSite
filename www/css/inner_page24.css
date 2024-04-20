@@ -33,6 +33,9 @@ article.contentData {
 	text-align: right;
 	line-height: 32px;
 }
+article.contentData.spaced p{
+	margin-top: 2rem;
+}
 
 article.contentData p a {
 	color: var(--color-font-text-a);
