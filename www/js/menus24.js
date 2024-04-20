@@ -1,20 +1,27 @@
 const prices = {
-	"price_cbt": "400",
-	"price_tipul_bemusika": "400",
-	"price_biofeedback": "400",
-	"price_tipul_rigshi_kids": "400",
 	"price_tipul_rigshi_mevugarim": "400",
-	"price_tipul_diadi": "400",
-	"price_gil_itbagrut_partani": "300",
-	"price_gil_itbagrut_kvuza": "500",
-	"price_parents": "500",
-	"price_prof_training": "400",
-	"price_social_skills_partani": "300",
-	"price_social_skills_kvuza": "500",
+
 	"price_start_intake": "400",
+	"price_tipul_rigshi_kids": "400",
+
+	"price_tipul_bemusika": "400",
+	"price_tipul_diadi": "400",
+
+	"price_cbt": "400",
+	"price_biofeedback": "400",
+
 	"price_tipul_metziut_meduma": "400",
 	"price_tipul_tzlil": "400",
 	"price_tipul_dbt": "400",
+
+	"price_social_skills_partani": "300",
+	"price_social_skills_kvuza": "500",
+
+	"price_gil_itbagrut_partani": "300",
+	"price_gil_itbagrut_kvuza": "500",
+
+	"price_parents": "400",
+	"price_prof_training": "400",
 }
 
 function setUpperMenu() {
@@ -33,6 +40,7 @@ function setUpperMenu() {
 	myMenu.push({ 'page': "טיפולים קבוצתיים", 'title': "tipul_kvutzati", 'file': "pages/tipul_kvutzati.html" });
 	myMenu.push({ 'page': "ייעוץ והדרכה", 'title': "yiutz_adraha", 'file': "pages/yiutz_adraha.html" });
 	myMenu.push({ 'page': "קורסים", 'title': "courses", 'file': "pages/courses.html" });
+	myMenu.push({ 'page': "מחירון", 'title': "price_list", 'file': "pages/price_list.html" });
 	myMenu.push({ 'page': "מאמרים", 'title': "articles", 'file': "pages/articles.html" });
 	myMenu.push({ 'page': "צור קשר", 'title': "contact", 'file': "pages/contact_us.html" });
 
