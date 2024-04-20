@@ -2,7 +2,7 @@
 :root {
     /* site colors */
     --color-background:#c397c4;/*== rgb(195, 151, 196);*/
-    
+    --color-background2: white;
     --color-background-filter1:rgba(255, 255, 255, 0.32);
     --color-background-filter2:rgba(195, 151, 196, 0);
     --color-background-menu: rgb(153, 102, 153); /* == #996699;*/
@@ -11,7 +11,7 @@
     --color-font-text-a:rgb(111, 37, 111);
     --color-font-text-a-hover:rgb(176, 82, 176);
     
-    --color-font-footer:white;
+    --color-font-footer:#ffffff;
 
     --font-header-color1: white;
     --font-header-color2: #650270;
@@ -20,6 +20,7 @@
     --navbar-background-color:  #ac60b3;
     --navbar-background-color-menu: #e5d1e5fc;  
     --navbar-background-color-topnav:  #d8b0d8;
+    --navbar-background-color-selected-topnav:  #ecc2ec;
     --navbar-background-color-l1: #c397c4; 
     --navbar-background-color-l2: white; /* #c397c4; /* white; */
     --navbar-background: #99669900;

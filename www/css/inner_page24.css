@@ -19,8 +19,9 @@ div.breadcrumbs_more {
 }
 
 article.contentData {
+	display: block;
 	margin-top: 10px;
-	/* padding: 15px; */
+	padding: 15px;
 	padding-bottom: 20px;
 
 	font-weight: normal;

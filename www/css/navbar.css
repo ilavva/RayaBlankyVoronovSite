@@ -13,7 +13,7 @@
 
 #upper_menu {
   position: relative;
-  top: 2rem;
+  top: 2.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,7 +44,7 @@
   box-shadow: 3px 3px 2px 2px var(--menu-shadow-color);
   -webkit-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
   -moz-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
- 
+  background-color: var( --navbar-background-color-menu);
 }
 .menu > li a:hover{
   background-color: var( --navbar-background-color-menu);
@@ -82,9 +82,9 @@
   border-radius: 50%;
 }
 
-.menu-button-container:hover {
-  background-color: var(--navbar-background-color-topnav);
-}
+/* .menu-button-container:hover {
+  background-color:var(--navbar-background-color-topnav);
+} */
 #menu-toggle {
   display: none;
 }
@@ -93,7 +93,7 @@
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: var(--navbar-background-color);
+  background-color: var(--navbar-font-color);
   position: absolute;
   height: 4px;
   width: 2rem;
@@ -119,26 +119,28 @@
 
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: var(--navbar-background);
-}
+} 
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-45deg); 
 }
 
-
+#menu-toggle:checked + .menu-button-container {
+  background-color: var(--navbar-background-color-menu);
+  border:2px solid var(--navbar-background-color-topnav);
+}
 @media (max-width: 830px) {
   #header {
     height: 80px;
   }
   .menu-button-container {
     margin-right: 7px;
-    background-color: var(--color-background);
-    border:2px solid var(--navbar-background-color-topnav);
-  }
+  } 
   .menu-button-container:hover{
-    border:2px solid var(--navbar-background-color-topnav);
-    background-color: var(--navbar-background-color-menu);
+    background-color: var(--color-background);;
+    border:2px solid var(--color-background);;
+    
   }
  
   .menu-button-container {
@@ -228,14 +230,11 @@
   #logo_title h1
   {
     padding-right: 1rem;
-    font-size:2.3rem;
-
-    
-  font-style: italic;
-  font-weight: bold;
-  font-stretch:wider;
-    background: #ffffff;
-
+    font-size:2.3rem;  
+    font-style: italic;
+    font-weight: bold;
+    font-stretch:wider;
+    background: var(--color-background2);
     background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
     background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
     background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
@@ -253,7 +252,7 @@
     font-style: italic;
     font-weight: bold;
     font-stretch:wider;
-    background: #ffffff;
+    background: var(--color-background2);
     
     background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
     background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
@@ -269,9 +268,13 @@
     text-decoration: none;
   
   }
+  #upper_menu {
+    position: relative;
+    top: 0.5rem;
+  }
   .menu-button-container {
     position: absolute;
-    top:-60px;
+    top:-40px;
     left:10px;
   }
 }

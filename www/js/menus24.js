@@ -51,12 +51,14 @@ function setUpperMenu() {
 
 function setFooterData() {
 	var suffix = "..";
+	var relative_path = "../";
 	var filename = document.getElementById("header").getAttribute("page");
 	if (filename === "index") {
 		suffix = ".";
+		var relative_path = "./";
 	}
 
-	var str = '' +
+	let strA = '' +
 		'<div class="footerData"><span> ד"ר רעיה בלנקי-וורונוב</span></div>' +
 		'<div class="footerData">' +
 		'	<span><a href="tel:054-4934956">לקביעת פגישה חייגו: 054-4934956<img src="' + suffix + '/img/call_FILL0_wght400_GRAD0_opsz24.png" alt="Call 054-4934956" /> </a></span>' +
@@ -65,6 +67,28 @@ function setFooterData() {
 		'<div class="footerData">' +
 		'	<span><a href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20" target="_blank"><img src="' + suffix + '/img/whatsapp.png" > הודעה לווטסאפ</a></span>' +
 		'</div> ';
+
+	let str = `	<div class="footerDiv">
+		<a
+		  href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20"
+		  target="_blank"
+		  ><img src="${relative_path}img/contact/whatsapp_s.png" alt="whatsapp"
+		/></a>
+
+		<a href="tel:+97254-4934956" target="_blank"
+		  ><img src="${relative_path}img/contact/telephone-call_s.png" alt="telephone-call"
+		/></a>
+
+		<a href="mailto:raya.bv@gmail.com" target="_blank"
+		  ><img src="${relative_path}img/contact/email_s.png" alt="email"
+		/></a>
+
+		<a
+		  href="https://www.google.ru/maps/place/%D7%A7%D7%A8%D7%99%D7%AA+%D7%94%D7%A9%D7%A8%D7%95%D7%9F,+%D0%9D%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%E2%80%AD/@32.3006414,34.8595484,14.5z/data=!4m6!3m5!1s0x151d3f92a2a21569:0xb0db5ac6c142ddf0!8m2!3d32.29976!4d34.874061!16s%2Fg%2F1tdhw507?entry=ttu"
+		  target="_blank"
+		  ><img src="${relative_path}img/contact/home-address_s.png" alt="home-address"
+		/></a>
+	  </div>`
 	document.querySelector("footer").innerHTML = str;
 
 }
