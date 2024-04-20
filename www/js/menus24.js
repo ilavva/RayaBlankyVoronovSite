@@ -9,7 +9,7 @@ const prices = {
 	"price_gil_itbagrut_kvuza": "500",
 	"price_parents": "500",
 	"price_prof_training": "400",
-	"price_social_skills_partani": "300",
+	"price_social_skills_partani": "400",
 	"price_social_skills_kvuza": "500",
 	"price_start_intake": "400",
 }
@@ -72,16 +72,6 @@ function setFooterData() {
 		suffix = ".";
 		var relative_path = "./";
 	}
-
-	let strA = '' +
-		'<div class="footerData"><span> ד"ר רעיה בלנקי-וורונוב</span></div>' +
-		'<div class="footerData">' +
-		'	<span><a href="tel:054-4934956">לקביעת פגישה חייגו: 054-4934956<img src="' + suffix + '/img/call_FILL0_wght400_GRAD0_opsz24.png" alt="Call 054-4934956" /> </a></span>' +
-		'	<span><a href="mailto:raya.bv@gmail.com" target="_blank">או כתבו ל raya.bv@gmail.com <img src="' + suffix + '/img/mail_FILL0_wght400_GRAD0_opsz24.png" alt="mailto raya.bv@gmail.com" /> </a></span>' +
-		'</div>' +
-		'<div class="footerData">' +
-		'	<span><a href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20" target="_blank"><img src="' + suffix + '/img/whatsapp.png" > הודעה לווטסאפ</a></span>' +
-		'</div> ';
 
 	let str = `	<div class="footerDiv">
 		<a

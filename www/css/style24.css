@@ -44,10 +44,10 @@ article.contentData{
 	color: var(--color-font-text);
     /* font-family: David; */
 	font-size: 21px;
-    
-    text-align: right;
+  text-align: right;
 	line-height: 32px;
 }
+
 h1.img {
     width: fit-content;
     max-width: fit-content;
@@ -231,26 +231,7 @@ footer {
     left: 50%;
 }
 
-footer *,
-.footer * {
-    color:var(--color-font-footer);
-    text-decoration: none;
-    font-size: medium;
-    font-weight: lighter; 
-}
 
-footer > div span a img , 
-footer > div span img
-{
-    vertical-align: text-bottom;
-    width: 16px;
-    height: 16px; 
-}
-
-.footerData>span {
-    padding-inline: 10px;
-    text-wrap:nowrap;
-}
 
 
 /* ********************************************footer */

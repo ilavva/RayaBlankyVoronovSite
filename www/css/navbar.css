@@ -44,7 +44,7 @@
   box-shadow: 3px 3px 2px 2px var(--menu-shadow-color);
   -webkit-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
   -moz-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
-  background-color: var( --navbar-background-color-menu);
+  background-color: var(--navbar-background-color-topnav);
 }
 .menu > li a:hover{
   background-color: var( --navbar-background-color-menu);
@@ -160,6 +160,7 @@
     align-items: center;
     gap:0;
   }
+  
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -167,6 +168,7 @@
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+
   #menu-toggle:checked ~ .menu li {
     border: 1px solid var(--menu-border-color); 
     height: 3.5em;
@@ -175,14 +177,16 @@
     opacity: 1;
   
   }
+  .menu> li a{
+    background-color: var(--navbar-background-color-menu);
+  }
+
   .menu > li {
     display: flex;
     justify-content: center;
     margin: 0;
-    /* padding: 0.5em 0; */
     width: 100%;
     color: var(--navbar-font-color);
-    background-color: var(--navbar-background-color-topnav);
     background:  var(--navbar-background-color-menu) ;
     opacity: 0;
   }
