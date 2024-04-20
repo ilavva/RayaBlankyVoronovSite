@@ -47,6 +47,13 @@ article.contentData{
   text-align: right;
 	line-height: 32px;
 }
+article.contentData.center {
+  float: none;
+}
+article.contentData.center div.price_list{
+  max-width:fit-content;
+  margin: auto;
+}
 
 h1.img {
     width: fit-content;
@@ -198,6 +205,7 @@ div.gallery>a {
     font-weight: 400;
     font-style: normal;
   }
+ 
   .contSocialBox a:hover {
     background: var(--background-color-contact-item-hover);
     border: 2px solid var(--background-color-contact-item-hover);
@@ -211,7 +219,12 @@ div.gallery>a {
   border-radius: 50%;
 
   }
-
+@media screen and (max-width: 300px) {
+  .contSocialBox a {
+    text-wrap: wrap;
+    gap: 10px;
+  }
+}
 /* footer */
 
 footer {

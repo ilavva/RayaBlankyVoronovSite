@@ -12,6 +12,9 @@ const prices = {
 	"price_social_skills_partani": "400",
 	"price_social_skills_kvuza": "500",
 	"price_start_intake": "400",
+	"price_tipul_metziut_meduma": "400",
+	"price_tipul_tzlil": "400",
+	"price_tipul_dbt": "400",
 }
 
 function setUpperMenu() {
@@ -99,9 +102,14 @@ function setFooterData() {
 }
 function updatePrices() {
 	for ([elem_id, price] of Object.entries(prices)) {
+		const price_nil = `${price} שח`;
 		let elem = document.querySelector(`#${elem_id}`);
 		if (elem) {
-			elem.innerHTML = price;
+			elem.innerHTML = price_nil;
+		}
+		elem = document.querySelector(`.${elem_id}`);
+		if (elem) {
+			elem.innerHTML = price_nil;
 		}
 
 	}

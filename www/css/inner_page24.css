@@ -168,6 +168,10 @@ img.about2 {
 		font-size: smaller;
 	}
 
+	div.breadcrumbs_more {
+		text-wrap: wrap;
+	}
+
 }
 
 
@@ -244,16 +248,9 @@ ul, ol {
 ul.contact_v_sign {
 	list-style-type: "♪";
 }
-  ul.contact_v_sign li {
+ul.contact_v_sign li {
 	padding: 0.5rem 1rem;
-  }
-/* ul.contact_v_sign li:before {
-	width: 30px;
-} */
-
-/* .contact_v_sign li{
-	display: block;
-} */
+}
 
 
 
@@ -295,4 +292,38 @@ section.contact p {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
+}
+
+.price_list>li>a {
+	width:100;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	border-bottom: 1px dotted var(--color-font-text) ;
+}
+
+.price_list>li >a {
+	text-decoration: none;
+	color: var(--color-font-text);
+}
+.price_list>li:hover {
+	background-color: var(--navbar-background-color-selected-topnav);
+}
+.price_list>li >a>span {
+	text-wrap: nowrap;
+}
+.price_list>li >a>span.shirut_name {
+	text-wrap: wrap;
+}
+span.space_divider {
+	margin-right:1rem;
+}
+.price_list>li >a>span.shirut_name {
+	text-wrap: wrap;
+}
+.price_list>li >a>span:last-child {
+	display: table-cell;
+	font-style: italic;
+	height: 100%;
+	vertical-align: bottom;
 }
