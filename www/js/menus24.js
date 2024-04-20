@@ -1,34 +1,11 @@
-const prices = {
-	"price_tipul_rigshi_mevugarim": "400",
 
-	"price_start_intake": "400",
-	"price_tipul_rigshi_kids": "400",
-
-	"price_tipul_bemusika": "400",
-	"price_tipul_diadi": "400",
-
-	"price_cbt": "400",
-	"price_biofeedback": "400",
-
-	"price_tipul_metziut_meduma": "400",
-	"price_tipul_tzlil": "400",
-	"price_tipul_dbt": "400",
-
-	"price_social_skills_partani": "300",
-	"price_social_skills_kvuza": "500",
-
-	"price_gil_itbagrut_partani": "300",
-	"price_gil_itbagrut_kvuza": "500",
-
-	"price_parents": "400",
-	"price_prof_training": "400",
-}
+import prices_json from './prices.json' with { type: 'json' };;
 
 function setUpperMenu() {
-	var myMenu = [];
-	var strMenu = "";
-	var relative_path = "../";
-	var page = document.getElementById("header").getAttribute("page");
+	let myMenu = [];
+	let strMenu = "";
+	let relative_path = "../";
+	let page = document.getElementById("header").getAttribute("page");
 	if (page === "index") {
 		relative_path = "./";
 	}
@@ -44,7 +21,7 @@ function setUpperMenu() {
 	myMenu.push({ 'page': "מאמרים", 'title': "articles", 'file': "pages/articles.html" });
 	myMenu.push({ 'page': "צור קשר", 'title': "contact", 'file': "pages/contact_us.html" });
 
-	var strBreadcrumbs = "";
+	let strBreadcrumbs = "";
 
 	strMenu = `
 		<div id="logo_title">
@@ -59,8 +36,8 @@ function setUpperMenu() {
       	</label>
 	  	<ul class="menu">`;
 
-	for (i = 0; i < myMenu.length; i++) {
-		var strClassName = "menuText";
+	for (let i = 0; i < myMenu.length; i++) {
+		let strClassName = "menuText";
 		if (myMenu[i]['title'] == page) {
 			strClassName = "selectedMenuText";
 			strBreadcrumbs = `<a href="${relative_path}index.html">דף הבית</a> > ${myMenu[i]['page']}`;
@@ -76,12 +53,11 @@ function setUpperMenu() {
 }
 
 function setFooterData() {
-	var suffix = "..";
-	var relative_path = "../";
-	var filename = document.getElementById("header").getAttribute("page");
+
+	let relative_path = "../";
+	let filename = document.getElementById("header").getAttribute("page");
 	if (filename === "index") {
-		suffix = ".";
-		var relative_path = "./";
+		relative_path = "./";
 	}
 
 	let str = `	<div class="footerDiv">
@@ -109,7 +85,8 @@ function setFooterData() {
 
 }
 function updatePrices() {
-	for ([elem_id, price] of Object.entries(prices)) {
+	const prices = prices_json;
+	for (let [elem_id, price] of Object.entries(prices)) {
 		const price_nil = `${price} שח`;
 		let elem = document.querySelector(`#${elem_id}`);
 		if (elem) {
