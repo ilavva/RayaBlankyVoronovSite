@@ -13,8 +13,8 @@
     
     --color-font-footer:#ffffff;
 
-    --font-header-color1: white;
-    --font-header-color2: #650270;
+    --logo-title-font1: #801b8b;
+    --logo-title-font-shadow: rgba(254, 252, 255, 1);
 
     /* colors for navbar.css */
     --navbar-background-color:  #ac60b3;
@@ -26,6 +26,7 @@
     --navbar-background-color-l1: #c397c4; 
     --navbar-background-color-l2: white; /* #c397c4; /* white; */
     --navbar-background: #99669900;
+
     --menu-shadow-color:#5a475d62;
    
     --background-color-contact-item: #d8b0d8;

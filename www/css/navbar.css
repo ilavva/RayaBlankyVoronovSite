@@ -238,16 +238,11 @@
     font-style: italic;
     font-weight: bold;
     font-stretch:wider;
-    background: var(--color-background2);
-    background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
-    background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
-    background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
-
+    background: var(--logo-title-font1);
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-    text-shadow: -7px 10px 7px rgba(254, 252, 255, 1);
+    text-shadow: -3px 3px 10px var(--logo-title-font-shadow);
     
   }
   #logo_title h2 {
@@ -256,18 +251,11 @@
     font-style: italic;
     font-weight: bold;
     font-stretch:wider;
-    background: var(--color-background2);
-    
-    background: linear-gradient(60deg, #ec94f5  0%,  #793a80 80%);
-    background: -webkit-linear-gradient(60deg, #ec94f5 0%,    #793a80  80%);
-    background: -moz-linear-gradient(60deg #ec94f5 0%,   #793a80  80%);
-    
+    background: var(--logo-title-font1);
     -webkit-background-clip: text;
     background-clip:text;
-
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--font-header-color2); /* width and color */
-    text-shadow: -7px 10px 7px rgba(255,255,255,1);
+    text-shadow: -3px 3px 10px var(--logo-title-font-shadow);
     text-decoration-line: none; 
     text-decoration: none;
   
