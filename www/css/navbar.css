@@ -134,9 +134,7 @@
   #header {
     height: 80px;
   }
-  .menu-button-container {
-    margin-right: 7px;
-  } 
+
   .menu-button-container:hover{
     background-color: var(--color-background);;
     border:2px solid var(--color-background);;
@@ -145,7 +143,7 @@
  
   .menu-button-container {
     position: absolute;
-    top:-20px;
+    top:-30px;
     left:10px;
     display: flex;
     z-index: 101;
@@ -221,13 +219,13 @@
 @media (max-width: 600px) {
   /* Small devices (portrait tablets and large phones, 600px and up) */
   #header {
-    background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter2) ),url("./../img/header.jpg");
-    /* background-image: url("./../img/header.jpg"); */
+    /* background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter2) ),url("./../img/header.jpg"); */
+    background-image: url("./../img/header_mobile.jpg");
     background-size: contain;
   }
 
   #logo_title {
-    visibility:visible;
+    visibility:hidden;
   }
 
   
@@ -264,9 +262,10 @@
     position: relative;
     top: 0.5rem;
   }
+  
   .menu-button-container {
     position: absolute;
-    top:-40px;
+    top:-0px;
     left:10px;
   }
 }

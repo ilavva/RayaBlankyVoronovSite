@@ -92,6 +92,9 @@ em {
     font-style: normal;
     text-decoration: underline;
 }
+p .bold {
+  font-weight: bolder;
+}
 .divider {
 	height: 50px;
 }
