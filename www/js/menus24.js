@@ -1,5 +1,30 @@
 
-import prices_json from './prices.json' with { type: 'json' };;
+prices_json =
+{
+	"price_tipul_rigshi_mevugarim": "400",
+
+	"price_start_intake": "400",
+	"price_tipul_rigshi_kids": "400",
+
+	"price_tipul_bemusika": "400",
+	"price_tipul_diadi": "400",
+
+	"price_cbt": "400",
+	"price_biofeedback": "400",
+
+	"price_tipul_metziut_meduma": "400",
+	"price_tipul_tzlil": "400",
+	"price_tipul_dbt": "400",
+
+	"price_social_skills_partani": "300",
+	"price_social_skills_kvuza": "500",
+
+	"price_gil_itbagrut_partani": "300",
+	"price_gil_itbagrut_kvuza": "500",
+
+	"price_parents": "400",
+	"price_prof_training": "400"
+};
 
 function setUpperMenu() {
 	let myMenu = [];
@@ -99,6 +124,11 @@ function updatePrices() {
 
 	}
 }
-setFooterData();
-setUpperMenu();
-updatePrices();
+function updateGUI() {
+	setFooterData();
+	setUpperMenu();
+	updatePrices();
+}
+updateGUI();
+
+
