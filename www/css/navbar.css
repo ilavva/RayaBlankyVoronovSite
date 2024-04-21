@@ -46,12 +46,13 @@
   -moz-box-shadow:3px 3px 2px 2px var(--menu-shadow-color);
   background-color: var(--navbar-background-color-topnav);
 }
+
 .menu > li a:hover{
   background-color: var( --navbar-background-color-menu);
 }
+
 .selectedMenuText a {
     color: var(--navbar-font-color-selected-menu);
-    /* font-family: David; */
     font-weight: bold;
     text-decoration: none;
     text-wrap:nowrap;
@@ -59,7 +60,6 @@
 
 .menuText a {
     color: var(--navbar-font-color-menu);
-    /* font-family: David; */
     font-weight:bolder;
     text-align: right;
     text-wrap:nowrap;
@@ -82,9 +82,6 @@
   border-radius: 50%;
 }
 
-/* .menu-button-container:hover {
-  background-color:var(--navbar-background-color-topnav);
-} */
 #menu-toggle {
   display: none;
 }

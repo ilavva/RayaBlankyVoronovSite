@@ -49,11 +49,6 @@ function setUpperMenu() {
 	let strBreadcrumbs = "";
 
 	strMenu = `
-		<div id="logo_title">
-				<h1>קליניקה לפסיכותרפיה</h1>
-				<h2>טיפול ~ לימוד ~ הדרכה</h2>
-		</div>
-
 		<div id="upper_menu" page="${page}">
   				<input id="menu-toggle" type="checkbox" />
         		<label class='menu-button-container' for="menu-toggle">
