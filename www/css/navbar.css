@@ -19,7 +19,7 @@
 
 #upper_menu {
   position: relative;
-  top: 0px;
+  top: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -161,7 +161,7 @@
     align-items: center;
     gap:0;
   }
-  
+
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -226,12 +226,12 @@
   #logo-2 {   display: block; }
   
   #upper_menu {
-    top:140px;
+    position: relative;
+    top:0px;
   }
   
   .menu-button-container {
-
-    top:-50px;
+    top:0px;
     left:10px;
   }
 }
