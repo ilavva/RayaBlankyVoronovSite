@@ -95,6 +95,9 @@ em {
 p .bold {
   font-weight: bolder;
 }
+p .bigger {
+  font-size: 24px;
+}
 .divider {
 	height: 50px;
 }

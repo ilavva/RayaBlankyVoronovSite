@@ -23,7 +23,8 @@ prices_json =
 	"price_gil_itbagrut_kvuza": "500",
 
 	"price_parents": "400",
-	"price_prof_training": "400"
+	"price_prof_training": "400",
+	"price_course": "4000"
 };
 
 function setUpperMenu() {

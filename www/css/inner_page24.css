@@ -23,24 +23,74 @@ article.contentData {
 	margin-top: 10px;
 	padding: 15px;
 	padding-bottom: 20px;
-
+	font-size: 21px;
 	font-weight: normal;
+	text-align: right;
+	
+}
+article.contentData * {
 
 	color: var(--color-font-text);
-	/* font-family: David; */
-	font-size: 21px;
-
-	text-align: right;
 	line-height: 32px;
+
 }
-article.contentData.spaced p{
+article.contentData a {
+	color: var(--color-font-text-a);
+}
+article.contentData a:hover {
+	color: var(--color-font-text-a-hover);
+}
+article.contentData.spaced p,
+article.contentData.spaced h2,
+article.contentData.spaced h3{
 	margin-top: 2rem;
 }
 
 article.contentData p a {
 	color: var(--color-font-text-a);
 } 
+article.contentData p.red {
+	color: var(--color-font-text-red);
+} 
+article.contentData p span.bold {
+	font-weight: 500;
+} 
 
+article.contentData button {
+	font-size: 21px;
+	font-weight: normal;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: var(--color-background-button);
+	color: var(--color-font-button);
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+article.contentData button:hover {
+	cursor: pointer;
+	background-color: var(--color-background-button-active);
+	color: var(--color-font-button-active);
+}
+.recomendation {
+	background-color: var(--color-background-recomendation);
+	border-radius: 15px;
+	padding: 20px;
+	margin-top: 3rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+/*https://superdesigner.co/tools/css-backgrounds*/
+	background: linear-gradient(0deg, transparent 43%, var(--color-background-line) 43%, var(--color-background-line) 45%, transparent 55%, transparent 20%, var(--color-background-line) 20%, var(--color-background-line) 30%,transparent 30%);
+    background-size: 2em 32px;
+    background-color: var(--color-background-line-pattern-background-color);
+
+
+}
+.recomendation .text {
+	font-style: italic;
+}
+.recomendation .name {
+	text-align: end;
+}
 .answer {
 	padding-top: 15px;
 }

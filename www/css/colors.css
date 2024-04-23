@@ -8,10 +8,18 @@
     --color-background-filter2:rgba(195, 151, 196, 0);
     --color-background-menu: rgb(153, 102, 153); /* == #996699;*/
     
+    --color-background-button: rgb(153, 102, 153); 
+    --color-background-button-active:#ecc2ec;
+    --color-font-button:white;
+    --color-font-button-hover:rgb(81, 33, 81);
+    
+    --color-background-line: #bba4b7;
+    --color-background-line-pattern-background-color: #f8f5f8bc; 
+
     --color-font-text:rgb(83, 42, 83);
     --color-font-text-a:rgb(111, 37, 111);
-    --color-font-text-a-hover:rgb(176, 82, 176);
-    
+    --color-font-text-a-hover:rgb(81, 33, 81); /*rgb(176, 82, 176);*/
+    --color-font-text-red: rgb(198, 2, 2);
     --color-font-footer:#ffffff;
 
     --logo-title-font1: #801b8b;
