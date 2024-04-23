@@ -30,6 +30,7 @@
 }
 
 .menu{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -146,15 +147,23 @@
  
   .menu-button-container {
     position: absolute;
-    top:-50px;
+    top:0px;
     left:10px;
     display: flex;
     z-index: 101;
   }
-  .menu {
+
+  #upper_menu {
+    position: relative;
+    top:0px;
+  }
+  #upper_menu .menu {
     position: absolute;
-    top: -50px;
+    top: 0px;
     left: 0;
+  }
+  .menu {
+ 
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -229,7 +238,11 @@
     position: relative;
     top:0px;
   }
-  
+  #upper_menu .menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+  }
   .menu-button-container {
     top:0px;
     left:10px;
