@@ -59,6 +59,14 @@ h1.img {
     width: fit-content;
     max-width: fit-content;
     margin-bottom: 30px;
+    margin-right: 3rem;
+}
+
+.title_mobile {
+  display: none;
+}
+.title_big {
+  display: block;
 }
 h2#location {
 	text-decoration: none;
@@ -349,6 +357,14 @@ footer {
     }
 
 }
+@media screen and (max-width: 600px){
+.title_mobile {
+  display: block;
+}
+.title_big {
+  display: none;
+}
+}
 
 @media screen and (max-width: 500px){
 	.content {
@@ -359,6 +375,7 @@ footer {
 		max-width: 100%;
 		margin: 5px;
 	}
+
     div.gallery {	
 		flex-wrap: wrap;
 		justify-content:center;
