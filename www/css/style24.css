@@ -107,7 +107,9 @@ p .bigger {
 .divider30 {
 	height: 30px;
 }
-
+p.center {
+	text-align: center;
+}
 div.gallery {
   margin-top: 2rem;
 	display: flex;
