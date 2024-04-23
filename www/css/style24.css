@@ -296,18 +296,45 @@ footer {
     top: -2px;
   }
   
-  .footerDiv > a > img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 50%;
-    border:2px solid var(--color-background);
+
+  .footerDiv > a *{
+    background: var(--color-background-menu);
   }
-  .footerDiv > a > img:hover {
-    width: 50px;
-    height: 50px;
-  }
-  
+  .media-icon-container {
+    width:40px;
+    height:40px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--color-font-footer);
+    border:var(--color-background) 2px solid;
+    border-radius: 25px;
+
+    position: relative;
+    top: 0px; 
+    
+}
+.media-icon {
+  font-size:24px;
+  background: var(--color-background-menu);
+ 
+}
+.media-icon.smaller {
+  font-size: 18px;
+   position: relative;
+  bottom:-5px; 
+}
+.footerDiv > a :hover * {
+  color:var(--color-font-2);
+  background: var(--color-background-menu);
+  font-size: 24px;
+}
+
+.media-icon-container:hover {
+  width:50px;
+  height:50px;
+
+}
 @media screen and (max-width: 880px) {
     .divider.unvisible880,
     .divider50.unvisible880,
@@ -315,26 +342,7 @@ footer {
         height: 0px;
         display: none;
     }
-    div.footer div.footerData {
-        width:100%;         
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        line-height: 200%;
-        
-    
-    }
-    body > div > footer > div:nth-child(2) {
-        text-align: center;
-    }
-    footer * {
-       
-        font-size:large;
-    }
-    
-    footer div{
-        margin: auto;
-    }
+
 }
 
 @media screen and (max-width: 500px){

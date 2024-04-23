@@ -49,6 +49,7 @@ function setUpperMenu() {
 	let strBreadcrumbs = "";
 
 	strMenu = `
+		<div><img id="logo-1" src="${relative_path}img/logo.jpg"><img id="logo-2" src="${relative_path}img/header_mobile.jpg"></div>
 		<div id="upper_menu" page="${page}">
   				<input id="menu-toggle" type="checkbox" />
         		<label class='menu-button-container' for="menu-toggle">
@@ -80,27 +81,15 @@ function setFooterData() {
 		relative_path = "./";
 	}
 
-	let str = `	<div class="footerDiv">
-		<a
-		  href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20"
-		  target="_blank"
-		  ><img src="${relative_path}img/contact/whatsapp_s.png" alt="whatsapp"
-		/></a>
+	let str = `<div class="footerDiv">
+	<a href="https://api.whatsapp.com/send?phone=9720544934956&text=%D7%94%D7%95%D7%93%D7%A2%D7%94%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%3A%20"  target="_blank" alt="whatsapp">
+			<div class="media-icon-container"><span class="media-icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span></div></a>
+	<a href="tel:+97254-4934956" target="_blank"  alt="telephone-call"><div class="media-icon-container"><span class="media-icon"><i class="fa fa-mobile" aria-hidden="true"></i></span></div></a>
+	<a href="href="mailto:raya.bv@gmail.com" target="_blank" alt="email"><div class="media-icon-container"><span class="media-icon smaller"> <i class="fa fa-envelope-o" aria-hidden="true"></i></span></div></a>
+	<a href="https://www.google.ru/maps/place/%D7%A7%D7%A8%D7%99%D7%AA+%D7%94%D7%A9%D7%A8%D7%95%D7%9F,+%D0%9D%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%E2%80%AD/@32.3006414,34.8595484,14.5z/data=!4m6!3m5!1s0x151d3f92a2a21569:0xb0db5ac6c142ddf0!8m2!3d32.29976!4d34.874061!16s%2Fg%2F1tdhw507?entry=ttu"
+	target="_blank"  alt="home-address"> <div class="media-icon-container"><span class="media-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span></div></a>
+	</div>`;
 
-		<a href="tel:+97254-4934956" target="_blank"
-		  ><img src="${relative_path}img/contact/telephone-call_s.png" alt="telephone-call"
-		/></a>
-
-		<a href="mailto:raya.bv@gmail.com" target="_blank"
-		  ><img src="${relative_path}img/contact/email_s.png" alt="email"
-		/></a>
-
-		<a
-		  href="https://www.google.ru/maps/place/%D7%A7%D7%A8%D7%99%D7%AA+%D7%94%D7%A9%D7%A8%D7%95%D7%9F,+%D0%9D%D0%B5%D1%82%D0%B0%D0%BD%D0%B8%D1%8F%E2%80%AD/@32.3006414,34.8595484,14.5z/data=!4m6!3m5!1s0x151d3f92a2a21569:0xb0db5ac6c142ddf0!8m2!3d32.29976!4d34.874061!16s%2Fg%2F1tdhw507?entry=ttu"
-		  target="_blank"
-		  ><img src="${relative_path}img/contact/home-address_s.png" alt="home-address"
-		/></a>
-	  </div>`
 	document.querySelector("footer").innerHTML = str;
 
 }

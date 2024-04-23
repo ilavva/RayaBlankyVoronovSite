@@ -2,18 +2,24 @@
   width:100%;
   max-width: 1200px;
   top: 0px;
-  height: auto;
-  background: no-repeat url("./../img/logo.jpg");
+  
+  
   background-size: contain; 
+  position: relative;
 }
 
-#logo_title{
-  visibility:hidden;
+#logo-1, #logo-2 {
+  max-height: 108px;
+  height: auto;
+  width:100%;
 }
+
+#logo-1 {   display: block; }
+#logo-2 {   display: none; }
 
 #upper_menu {
   position: relative;
-  top: 2.5rem;
+  top: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,14 +146,14 @@
  
   .menu-button-container {
     position: absolute;
-    top:-30px;
+    top:-50px;
     left:10px;
     display: flex;
     z-index: 101;
   }
   .menu {
     position: absolute;
-    top: 0;
+    top: -50px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -215,54 +221,17 @@
 
 @media (max-width: 600px) {
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  #header {
-    /* background-image: linear-gradient(to right, var(--color-background-filter1), var(--color-background-filter2) ),url("./../img/header.jpg"); */
-    background-image: url("./../img/header_mobile.jpg");
-    background-size: contain;
-  }
 
-  #logo_title {
-    visibility:hidden;
-  }
-
+  #logo-1 {   display: none; }
+  #logo-2 {   display: block; }
   
-  #logo_title h1
-  {
-    padding-right: 1rem;
-    font-size:2.3rem;  
-    font-style: italic;
-    font-weight: bold;
-    font-stretch:wider;
-    background: var(--logo-title-font1);
-    -webkit-background-clip: text;
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: -3px 3px 10px var(--logo-title-font-shadow);
-    
-  }
-  #logo_title h2 {
-    font-size: 1.5rem;
-    padding-right: 4rem;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch:wider;
-    background: var(--logo-title-font1);
-    -webkit-background-clip: text;
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: -3px 3px 10px var(--logo-title-font-shadow);
-    text-decoration-line: none; 
-    text-decoration: none;
-  
-  }
   #upper_menu {
-    position: relative;
-    top: 0.5rem;
+    top:140px;
   }
   
   .menu-button-container {
-    position: absolute;
-    top:-0px;
+
+    top:-50px;
     left:10px;
   }
 }
