@@ -185,7 +185,9 @@ img.about2 {
 	float: left;
 	text-align: right;
 }
-
+.nowrap {
+	text-wrap: nowrap;
+}
 
 @media screen and (max-width: 880px){
 	div.about1 {
